@@ -132,7 +132,7 @@
             <key>freeSizeMode</key>
             <enum type="AlgorithmSettings::AlgorithmFreeSizeMode">Best</enum>
             <key>sizeConstraints</key>
-            <enum type="AlgorithmSettings::SizeConstraints">AnySize</enum>
+            <enum type="AlgorithmSettings::SizeConstraints">WordAligned</enum>
             <key>forceSquared</key>
             <false/>
             <key>maxRects</key>
@@ -260,6 +260,22 @@
                 <key>scale9FromFile</key>
                 <false/>
             </struct>
+            <key type="filename">cdino1.png</key>
+            <key type="filename">cdino2.png</key>
+            <struct type="IndividualSpriteSettings">
+                <key>pivotPoint</key>
+                <point_f>0.5,0.5</point_f>
+                <key>spriteScale</key>
+                <double>1</double>
+                <key>scale9Enabled</key>
+                <false/>
+                <key>scale9Borders</key>
+                <rect>30,15,59,30</rect>
+                <key>scale9Paddings</key>
+                <rect>30,15,59,30</rect>
+                <key>scale9FromFile</key>
+                <false/>
+            </struct>
             <key type="filename">cloud.png</key>
             <struct type="IndividualSpriteSettings">
                 <key>pivotPoint</key>
@@ -272,6 +288,57 @@
                 <rect>23,7,46,13</rect>
                 <key>scale9Paddings</key>
                 <rect>23,7,46,13</rect>
+                <key>scale9FromFile</key>
+                <false/>
+            </struct>
+            <key type="filename">ddino.png</key>
+            <key type="filename">sdino.png</key>
+            <struct type="IndividualSpriteSettings">
+                <key>pivotPoint</key>
+                <point_f>0.5,0.5</point_f>
+                <key>spriteScale</key>
+                <double>1</double>
+                <key>scale9Enabled</key>
+                <false/>
+                <key>scale9Borders</key>
+                <rect>22,24,44,47</rect>
+                <key>scale9Paddings</key>
+                <rect>22,24,44,47</rect>
+                <key>scale9FromFile</key>
+                <false/>
+            </struct>
+            <key type="filename">moon1.png</key>
+            <key type="filename">moon2.png</key>
+            <key type="filename">moon3.png</key>
+            <key type="filename">moon5.png</key>
+            <key type="filename">moon6.png</key>
+            <key type="filename">moon7.png</key>
+            <struct type="IndividualSpriteSettings">
+                <key>pivotPoint</key>
+                <point_f>0.5,0.5</point_f>
+                <key>spriteScale</key>
+                <double>1</double>
+                <key>scale9Enabled</key>
+                <false/>
+                <key>scale9Borders</key>
+                <rect>10,20,20,40</rect>
+                <key>scale9Paddings</key>
+                <rect>10,20,20,40</rect>
+                <key>scale9FromFile</key>
+                <false/>
+            </struct>
+            <key type="filename">moon4.png</key>
+            <struct type="IndividualSpriteSettings">
+                <key>pivotPoint</key>
+                <point_f>0.5,0.5</point_f>
+                <key>spriteScale</key>
+                <double>1</double>
+                <key>scale9Enabled</key>
+                <false/>
+                <key>scale9Borders</key>
+                <rect>20,20,40,40</rect>
+                <key>scale9Paddings</key>
+                <rect>20,20,40,40</rect>
                 <key>scale9FromFile</key>
                 <false/>
             </struct>
@@ -295,8 +362,8 @@
                 <key>scale9FromFile</key>
                 <false/>
             </struct>
-            <key type="filename">run1.png</key>
-            <key type="filename">run2.png</key>
+            <key type="filename">rdino1.png</key>
+            <key type="filename">rdino2.png</key>
             <struct type="IndividualSpriteSettings">
                 <key>pivotPoint</key>
                 <point_f>0.5,0.5</point_f>
@@ -308,21 +375,6 @@
                 <rect>22,24,44,48</rect>
                 <key>scale9Paddings</key>
                 <rect>22,24,44,48</rect>
-                <key>scale9FromFile</key>
-                <false/>
-            </struct>
-            <key type="filename">start.png</key>
-            <struct type="IndividualSpriteSettings">
-                <key>pivotPoint</key>
-                <point_f>0.5,0.5</point_f>
-                <key>spriteScale</key>
-                <double>1</double>
-                <key>scale9Enabled</key>
-                <false/>
-                <key>scale9Borders</key>
-                <rect>22,23,44,45</rect>
-                <key>scale9Paddings</key>
-                <rect>22,23,44,45</rect>
                 <key>scale9FromFile</key>
                 <false/>
             </struct>
@@ -338,16 +390,26 @@
                     <filename>bplant1.png</filename>
                     <filename>bplant2.png</filename>
                     <filename>bplant3.png</filename>
+                    <filename>cdino1.png</filename>
+                    <filename>cdino2.png</filename>
                     <filename>cloud.png</filename>
+                    <filename>ddino.png</filename>
+                    <filename>moon1.png</filename>
+                    <filename>moon2.png</filename>
+                    <filename>moon3.png</filename>
+                    <filename>moon4.png</filename>
+                    <filename>moon5.png</filename>
+                    <filename>moon6.png</filename>
+                    <filename>moon7.png</filename>
                     <filename>plant1.png</filename>
                     <filename>plant2.png</filename>
                     <filename>plant3.png</filename>
                     <filename>plant4.png</filename>
                     <filename>plant5.png</filename>
                     <filename>plant6.png</filename>
-                    <filename>run1.png</filename>
-                    <filename>run2.png</filename>
-                    <filename>start.png</filename>
+                    <filename>rdino1.png</filename>
+                    <filename>rdino2.png</filename>
+                    <filename>sdino.png</filename>
                 </array>
             </struct>
         </map>
