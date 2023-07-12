@@ -114,6 +114,7 @@
     "coroutine": "cpp",
     "resumable": "cpp",
     "ranges": "cpp",
-    "regex": "cpp"
+    "regex": "cpp",
+    "*.vert": "cpp"
   }
 }

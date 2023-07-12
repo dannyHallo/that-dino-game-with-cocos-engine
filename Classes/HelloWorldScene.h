@@ -29,15 +29,24 @@
 #define CC_DLL
 #endif // !CC_DLL
 
+#include "Dino.h"
 #include "cocos2d.h"
 
+#include <memory>
+
 class HelloWorld : public cocos2d::Layer {
+  std::unique_ptr<Dino> dino;
+
 public:
+  HelloWorld() {}
+  ~HelloWorld() = default;
+
   // factory method
   static cocos2d::Scene *createScene();
 
   // initializes the HelloWorld scene, creates game objects and animations
   virtual bool init();
+  virtual void update(float dt) override;
 
   // a selector callback
   void menuCloseCallback(cocos2d::Ref *pSender);
@@ -50,6 +59,10 @@ private:
   // cocos2d::Vector has the limitation that the objects added to it must have cocos2d::Ref as a base class, it helps to
   // manage memory
   cocos2d::Vector<cocos2d::SpriteFrame *> getAnimation(const char *format, int count);
+
+  void addKeyboardListeners();
+  void onKeyPressed(cocos2d::EventKeyboard::KeyCode keyCode, cocos2d::Event *event);
+  void onKeyReleased(cocos2d::EventKeyboard::KeyCode keyCode, cocos2d::Event *event);
 };
 
 #endif // __HELLOWORLD_SCENE_H__

@@ -7,6 +7,9 @@
     <ClCompile Include="E:\Cocos2dx\DinoWithCocos\Classes\HelloWorldScene.cpp">
       <Filter>Source Files\Classes</Filter>
     </ClCompile>
+    <ClCompile Include="E:\Cocos2dx\DinoWithCocos\Classes\Dino.cpp">
+      <Filter>Source Files\Classes</Filter>
+    </ClCompile>
     <ClCompile Include="E:\Cocos2dx\DinoWithCocos\proj.win32\main.cpp">
       <Filter>Source Files\proj.win32</Filter>
     </ClCompile>
@@ -19,6 +22,9 @@
       <Filter>Source Files\Classes</Filter>
     </ClInclude>
     <ClInclude Include="E:\Cocos2dx\DinoWithCocos\Classes\HelloWorldScene.h">
+      <Filter>Source Files\Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\Cocos2dx\DinoWithCocos\Classes\Dino.h">
       <Filter>Source Files\Classes</Filter>
     </ClInclude>
     <ClInclude Include="E:\Cocos2dx\DinoWithCocos\proj.win32\main.h">
@@ -41,9 +47,6 @@
     </ClInclude>
     <ClInclude Include="E:\Cocos2dx\DinoWithCocos\Resources\fonts\arial.ttf">
       <Filter>Resources\fonts</Filter>
-    </ClInclude>
-    <ClInclude Include="E:\Cocos2dx\DinoWithCocos\Resources\res\.gitkeep">
-      <Filter>Resources\res</Filter>
     </ClInclude>
     <ClInclude Include="E:\Cocos2dx\DinoWithCocos\Resources\res\HD\dinogame.plist">
       <Filter>Resources\res\HD</Filter>

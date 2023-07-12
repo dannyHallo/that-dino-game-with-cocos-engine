@@ -807,10 +807,12 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
   <ItemGroup>
     <ClInclude Include="E:\Cocos2dx\DinoWithCocos\Classes\AppDelegate.h" />
     <ClInclude Include="E:\Cocos2dx\DinoWithCocos\Classes\HelloWorldScene.h" />
+    <ClInclude Include="E:\Cocos2dx\DinoWithCocos\Classes\Dino.h" />
     <ClInclude Include="E:\Cocos2dx\DinoWithCocos\proj.win32\main.h" />
     <ClInclude Include="E:\Cocos2dx\DinoWithCocos\proj.win32\resource.h" />
     <ClCompile Include="E:\Cocos2dx\DinoWithCocos\Classes\AppDelegate.cpp" />
     <ClCompile Include="E:\Cocos2dx\DinoWithCocos\Classes\HelloWorldScene.cpp" />
+    <ClCompile Include="E:\Cocos2dx\DinoWithCocos\Classes\Dino.cpp" />
     <ClCompile Include="E:\Cocos2dx\DinoWithCocos\proj.win32\main.cpp" />
     <ResourceCompile Include="E:\Cocos2dx\DinoWithCocos\proj.win32\game.rc" />
     <ClInclude Include="E:\Cocos2dx\DinoWithCocos\Resources\CloseNormal.png" />
@@ -818,7 +820,6 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     <ClInclude Include="E:\Cocos2dx\DinoWithCocos\Resources\HelloWorld.png" />
     <ClInclude Include="E:\Cocos2dx\DinoWithCocos\Resources\fonts\Marker Felt.ttf" />
     <ClInclude Include="E:\Cocos2dx\DinoWithCocos\Resources\fonts\arial.ttf" />
-    <ClInclude Include="E:\Cocos2dx\DinoWithCocos\Resources\res\.gitkeep" />
     <ClInclude Include="E:\Cocos2dx\DinoWithCocos\Resources\res\HD\dinogame.plist" />
     <ClInclude Include="E:\Cocos2dx\DinoWithCocos\Resources\res\HD\dinogame.png" />
     <ClInclude Include="E:\Cocos2dx\DinoWithCocos\Resources\res\HDR\dinogame.plist" />

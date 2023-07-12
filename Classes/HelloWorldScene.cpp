@@ -46,30 +46,73 @@ bool HelloWorld::init() {
     return false;
   }
 
+  // add listeners
+  addKeyboardListeners();
+
   SpriteFrameCache::getInstance()->addSpriteFramesWithFile("dinogame.plist");
 
   Vec2 origin      = Director::getInstance()->getVisibleOrigin();
   Vec2 visibleSize = Director::getInstance()->getVisibleSize();
 
-  // create background colour
-  Color4B backgroundColour = Color4B(100, 100, 100, 255);
   // create background
-  LayerColor *background = LayerColor::create(backgroundColour, visibleSize.x, visibleSize.y);
+  Color4B backgroundColour = Color4B(83, 83, 83, 255);
+  LayerColor *background   = LayerColor::create(backgroundColour, visibleSize.x, visibleSize.y);
   background->setPosition(origin);
   this->addChild(background);
 
-  log("visibleSize.x: %f", visibleSize.x);
+  // create dino
+  auto runningFrames   = getAnimation("rdino%01d.png", 2);
+  auto crouchingFrames = getAnimation("cdino%01d.png", 2);
+
+  dino = std::make_unique<Dino>(visibleSize, runningFrames, crouchingFrames, background);
+
+  scheduleUpdate(); // this is required to call update() method every frame!
   return true;
 }
+
+void HelloWorld::update(float dt) { dino->update(dt); }
 
 void HelloWorld::menuCloseCallback(Ref *pSender) {
   // Close the cocos2d-x game scene and quit the application
   Director::getInstance()->end();
+}
 
-  /*To navigate back to native iOS screen(if present) without quitting the application  ,do not use
-   * Director::getInstance()->end() as given above,instead trigger a custom event created in RootViewController.mm as
-   * below*/
+Vector<SpriteFrame *> HelloWorld::getAnimation(const char *format, int count) {
+  auto spritecache = SpriteFrameCache::getInstance();
+  Vector<SpriteFrame *> animFrames;
+  char str[100];
+  for (int i = 1; i <= count; i++) {
+    sprintf(str, format, i);
+    animFrames.pushBack(spritecache->getSpriteFrameByName(str));
+  }
+  return animFrames;
+}
 
-  // EventCustom customEndEvent("game_scene_close_event");
-  //_eventDispatcher->dispatchEvent(&customEndEvent);
+void HelloWorld::addKeyboardListeners() {
+  // creating a keyboard event listener
+  auto listener           = EventListenerKeyboard::create();
+  listener->onKeyPressed  = CC_CALLBACK_2(HelloWorld::onKeyPressed, this);
+  listener->onKeyReleased = CC_CALLBACK_2(HelloWorld::onKeyReleased, this);
+
+  _eventDispatcher->addEventListenerWithSceneGraphPriority(listener, this);
+}
+
+// Implementation of the keyboard event callback function prototype
+void HelloWorld::onKeyPressed(EventKeyboard::KeyCode keyCode, Event *event) {
+  // press esc to quit
+  if (keyCode == EventKeyboard::KeyCode::KEY_ESCAPE) {
+    Director::getInstance()->end();
+  }
+
+  // press space to jump
+  if (keyCode == EventKeyboard::KeyCode::KEY_SPACE) {
+    dino->handleInput(Dino::Input::JUMP);
+  }
+}
+
+void HelloWorld::onKeyReleased(EventKeyboard::KeyCode keyCode, Event *event) {
+  // press space to jump
+  if (keyCode == EventKeyboard::KeyCode::KEY_SPACE) {
+    dino->handleInput(Dino::Input::CANCEL_JUMP);
+  }
 }
