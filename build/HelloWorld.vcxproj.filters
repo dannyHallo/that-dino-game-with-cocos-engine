@@ -1,0 +1,104 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="E:\Cocos2dx\HelloWorld\Classes\AppDelegate.cpp">
+      <Filter>Source Files\Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\Cocos2dx\HelloWorld\Classes\HelloWorldScene.cpp">
+      <Filter>Source Files\Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\Cocos2dx\HelloWorld\proj.win32\main.cpp">
+      <Filter>Source Files\proj.win32</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\Cocos2dx\HelloWorld\cocos2d\cocos\precheader.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="E:\Cocos2dx\HelloWorld\Classes\AppDelegate.h">
+      <Filter>Source Files\Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\Cocos2dx\HelloWorld\Classes\HelloWorldScene.h">
+      <Filter>Source Files\Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\Cocos2dx\HelloWorld\proj.win32\main.h">
+      <Filter>Source Files\proj.win32</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\Cocos2dx\HelloWorld\proj.win32\resource.h">
+      <Filter>Source Files\proj.win32</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\Cocos2dx\HelloWorld\Resources\CloseNormal.png">
+      <Filter>Resources</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\Cocos2dx\HelloWorld\Resources\CloseSelected.png">
+      <Filter>Resources</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\Cocos2dx\HelloWorld\Resources\HelloWorld.png">
+      <Filter>Resources</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\Cocos2dx\HelloWorld\Resources\fonts\Marker Felt.ttf">
+      <Filter>Resources\fonts</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\Cocos2dx\HelloWorld\Resources\fonts\arial.ttf">
+      <Filter>Resources\fonts</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\Cocos2dx\HelloWorld\Resources\res\.gitkeep">
+      <Filter>Resources\res</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\Cocos2dx\HelloWorld\Resources\res\HD\dinogame.plist">
+      <Filter>Resources\res\HD</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\Cocos2dx\HelloWorld\Resources\res\HD\dinogame.png">
+      <Filter>Resources\res\HD</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\Cocos2dx\HelloWorld\Resources\res\HDR\dinogame.plist">
+      <Filter>Resources\res\HDR</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\Cocos2dx\HelloWorld\Resources\res\HDR\dinogame.png">
+      <Filter>Resources\res\HDR</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\Cocos2dx\HelloWorld\Resources\res\SD\dinogame.plist">
+      <Filter>Resources\res\SD</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\Cocos2dx\HelloWorld\Resources\res\SD\dinogame.png">
+      <Filter>Resources\res\SD</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="E:\Cocos2dx\HelloWorld\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="E:\Cocos2dx\HelloWorld\proj.win32\game.rc">
+      <Filter>Source Files\proj.win32</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Resources">
+      <UniqueIdentifier>{A4BC069A-C797-3576-8DDF-F76279F26A9B}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resources\fonts">
+      <UniqueIdentifier>{2397764E-67FC-37E4-94EA-8450F796BE9F}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resources\res">
+      <UniqueIdentifier>{6A38F076-46E1-3746-A5CB-AA29D1CBAD62}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resources\res\HD">
+      <UniqueIdentifier>{B7298934-513C-3EEE-90EC-A0F0E6B0DB58}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resources\res\HDR">
+      <UniqueIdentifier>{CFDBE5C1-CD47-3A3A-8041-0B61F1999B96}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resources\res\SD">
+      <UniqueIdentifier>{B440F3C2-1343-3364-A13D-8E3027400598}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{106C1ECC-4C53-37AD-9D8E-DE0E0921C69C}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Classes">
+      <UniqueIdentifier>{434D317B-DA42-34D1-A889-24F72E4B6E9A}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\proj.win32">
+      <UniqueIdentifier>{258845FF-8C89-3FAE-BF14-6BA0EFF78160}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

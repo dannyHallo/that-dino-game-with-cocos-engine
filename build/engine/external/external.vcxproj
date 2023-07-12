@@ -1,0 +1,329 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|win32">
+      <Configuration>Debug</Configuration>
+      <Platform>win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|win32">
+      <Configuration>Release</Configuration>
+      <Platform>win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|win32">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|win32">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{C0F400EE-A0FF-3904-AEC3-7BE4E2A621A4}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.22621.0</WindowsTargetPlatformVersion>
+    <Platform>win32</Platform>
+    <ProjectName>external</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">E:\Cocos2dx\HelloWorld\build\lib\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">external.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">external</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|win32'">E:\Cocos2dx\HelloWorld\build\lib\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|win32'">external.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|win32'">external</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|win32'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'">E:\Cocos2dx\HelloWorld\build\lib\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'">external.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'">external</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'">E:\Cocos2dx\HelloWorld\build\lib\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'">external.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'">external</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'">.lib</TargetExt>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>E:\Cocos2dx\HelloWorld\cocos2d\external\recast\..;E:\Cocos2dx\HelloWorld\cocos2d\external\tinyxml2\.;E:\Cocos2dx\HelloWorld\cocos2d\external\xxhash\.;E:\Cocos2dx\HelloWorld\cocos2d\external\xxtea\.;E:\Cocos2dx\HelloWorld\cocos2d\external\clipper\.;E:\Cocos2dx\HelloWorld\cocos2d\external\edtaa3func\.;E:\Cocos2dx\HelloWorld\cocos2d\external\ConvertUTF\.;E:\Cocos2dx\HelloWorld\cocos2d\external\poly2tri\..;E:\Cocos2dx\HelloWorld\cocos2d\external\md5\..;E:\Cocos2dx\HelloWorld\cocos2d\external\unzip\.;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /external:I "E:/Cocos2dx/HelloWorld/cocos2d/external/Box2D/include" /external:I "E:/Cocos2dx/HelloWorld/cocos2d/external/chipmunk/include" /external:I "E:/Cocos2dx/HelloWorld/cocos2d/external/freetype2/include/win32/freetype2" /external:I "E:/Cocos2dx/HelloWorld/cocos2d/external/bullet/include" /external:I "E:/Cocos2dx/HelloWorld/cocos2d/external/bullet/include/bullet" /external:I "E:/Cocos2dx/HelloWorld/cocos2d/external/jpeg/include/win32" /external:I "E:/Cocos2dx/HelloWorld/cocos2d/external/openssl/include/win32" /external:I "E:/Cocos2dx/HelloWorld/cocos2d/external/uv/include" /external:I "E:/Cocos2dx/HelloWorld/cocos2d/external/webp/include/win32" /external:I "E:/Cocos2dx/HelloWorld/cocos2d/external/websockets/include/win32" /external:I "E:/Cocos2dx/HelloWorld/cocos2d/external/curl/include/win32" /external:I "E:/Cocos2dx/HelloWorld/cocos2d/external/png/include/win32" /external:I "E:/Cocos2dx/HelloWorld/cocos2d/external/win32-specific/gles/include/OGLES" /external:I "E:/Cocos2dx/HelloWorld/cocos2d/external/win32-specific/icon/include" /external:I "E:/Cocos2dx/HelloWorld/cocos2d/external/win32-specific/MP3Decoder/include" /external:I "E:/Cocos2dx/HelloWorld/cocos2d/external/win32-specific/OggDecoder/include" /external:I "E:/Cocos2dx/HelloWorld/cocos2d/external/win32-specific/OpenalSoft/include" /external:I "E:/Cocos2dx/HelloWorld/cocos2d/external/glfw3/include/win32" /external:I "E:/Cocos2dx/HelloWorld/cocos2d/external/zlib/../win32-specific/zlib/include"</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ExternalWarningLevel>TurnOffAllWarnings</ExternalWarningLevel>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;LWS_WITH_LIBUV;CMAKE_INTDIR="Debug"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_DEBUG;_WINDOWS;LWS_WITH_LIBUV;CMAKE_INTDIR=\"Debug\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>E:\Cocos2dx\HelloWorld\cocos2d\external\recast\..;E:\Cocos2dx\HelloWorld\cocos2d\external\tinyxml2\.;E:\Cocos2dx\HelloWorld\cocos2d\external\xxhash\.;E:\Cocos2dx\HelloWorld\cocos2d\external\xxtea\.;E:\Cocos2dx\HelloWorld\cocos2d\external\clipper\.;E:\Cocos2dx\HelloWorld\cocos2d\external\edtaa3func\.;E:\Cocos2dx\HelloWorld\cocos2d\external\ConvertUTF\.;E:\Cocos2dx\HelloWorld\cocos2d\external\poly2tri\..;E:\Cocos2dx\HelloWorld\cocos2d\external\md5\..;E:\Cocos2dx\HelloWorld\cocos2d\external\unzip\.;E:\Cocos2dx\HelloWorld\cocos2d\external\Box2D\include;E:\Cocos2dx\HelloWorld\cocos2d\external\chipmunk\include;E:\Cocos2dx\HelloWorld\cocos2d\external\freetype2\include\win32\freetype2;E:\Cocos2dx\HelloWorld\cocos2d\external\bullet\include;E:\Cocos2dx\HelloWorld\cocos2d\external\bullet\include\bullet;E:\Cocos2dx\HelloWorld\cocos2d\external\jpeg\include\win32;E:\Cocos2dx\HelloWorld\cocos2d\external\openssl\include\win32;E:\Cocos2dx\HelloWorld\cocos2d\external\uv\include;E:\Cocos2dx\HelloWorld\cocos2d\external\webp\include\win32;E:\Cocos2dx\HelloWorld\cocos2d\external\websockets\include\win32;E:\Cocos2dx\HelloWorld\cocos2d\external\curl\include\win32;E:\Cocos2dx\HelloWorld\cocos2d\external\png\include\win32;E:\Cocos2dx\HelloWorld\cocos2d\external\win32-specific\gles\include\OGLES;E:\Cocos2dx\HelloWorld\cocos2d\external\win32-specific\icon\include;E:\Cocos2dx\HelloWorld\cocos2d\external\win32-specific\MP3Decoder\include;E:\Cocos2dx\HelloWorld\cocos2d\external\win32-specific\OggDecoder\include;E:\Cocos2dx\HelloWorld\cocos2d\external\win32-specific\OpenalSoft\include;E:\Cocos2dx\HelloWorld\cocos2d\external\glfw3\include\win32;E:\Cocos2dx\HelloWorld\cocos2d\external\zlib\..\win32-specific\zlib\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>E:\Cocos2dx\HelloWorld\cocos2d\external\recast\..;E:\Cocos2dx\HelloWorld\cocos2d\external\tinyxml2\.;E:\Cocos2dx\HelloWorld\cocos2d\external\xxhash\.;E:\Cocos2dx\HelloWorld\cocos2d\external\xxtea\.;E:\Cocos2dx\HelloWorld\cocos2d\external\clipper\.;E:\Cocos2dx\HelloWorld\cocos2d\external\edtaa3func\.;E:\Cocos2dx\HelloWorld\cocos2d\external\ConvertUTF\.;E:\Cocos2dx\HelloWorld\cocos2d\external\poly2tri\..;E:\Cocos2dx\HelloWorld\cocos2d\external\md5\..;E:\Cocos2dx\HelloWorld\cocos2d\external\unzip\.;E:\Cocos2dx\HelloWorld\cocos2d\external\Box2D\include;E:\Cocos2dx\HelloWorld\cocos2d\external\chipmunk\include;E:\Cocos2dx\HelloWorld\cocos2d\external\freetype2\include\win32\freetype2;E:\Cocos2dx\HelloWorld\cocos2d\external\bullet\include;E:\Cocos2dx\HelloWorld\cocos2d\external\bullet\include\bullet;E:\Cocos2dx\HelloWorld\cocos2d\external\jpeg\include\win32;E:\Cocos2dx\HelloWorld\cocos2d\external\openssl\include\win32;E:\Cocos2dx\HelloWorld\cocos2d\external\uv\include;E:\Cocos2dx\HelloWorld\cocos2d\external\webp\include\win32;E:\Cocos2dx\HelloWorld\cocos2d\external\websockets\include\win32;E:\Cocos2dx\HelloWorld\cocos2d\external\curl\include\win32;E:\Cocos2dx\HelloWorld\cocos2d\external\png\include\win32;E:\Cocos2dx\HelloWorld\cocos2d\external\win32-specific\gles\include\OGLES;E:\Cocos2dx\HelloWorld\cocos2d\external\win32-specific\icon\include;E:\Cocos2dx\HelloWorld\cocos2d\external\win32-specific\MP3Decoder\include;E:\Cocos2dx\HelloWorld\cocos2d\external\win32-specific\OggDecoder\include;E:\Cocos2dx\HelloWorld\cocos2d\external\win32-specific\OpenalSoft\include;E:\Cocos2dx\HelloWorld\cocos2d\external\glfw3\include\win32;E:\Cocos2dx\HelloWorld\cocos2d\external\zlib\..\win32-specific\zlib\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>E:\Cocos2dx\HelloWorld\cocos2d\external\recast\..;E:\Cocos2dx\HelloWorld\cocos2d\external\tinyxml2\.;E:\Cocos2dx\HelloWorld\cocos2d\external\xxhash\.;E:\Cocos2dx\HelloWorld\cocos2d\external\xxtea\.;E:\Cocos2dx\HelloWorld\cocos2d\external\clipper\.;E:\Cocos2dx\HelloWorld\cocos2d\external\edtaa3func\.;E:\Cocos2dx\HelloWorld\cocos2d\external\ConvertUTF\.;E:\Cocos2dx\HelloWorld\cocos2d\external\poly2tri\..;E:\Cocos2dx\HelloWorld\cocos2d\external\md5\..;E:\Cocos2dx\HelloWorld\cocos2d\external\unzip\.;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /external:I "E:/Cocos2dx/HelloWorld/cocos2d/external/Box2D/include" /external:I "E:/Cocos2dx/HelloWorld/cocos2d/external/chipmunk/include" /external:I "E:/Cocos2dx/HelloWorld/cocos2d/external/freetype2/include/win32/freetype2" /external:I "E:/Cocos2dx/HelloWorld/cocos2d/external/bullet/include" /external:I "E:/Cocos2dx/HelloWorld/cocos2d/external/bullet/include/bullet" /external:I "E:/Cocos2dx/HelloWorld/cocos2d/external/jpeg/include/win32" /external:I "E:/Cocos2dx/HelloWorld/cocos2d/external/openssl/include/win32" /external:I "E:/Cocos2dx/HelloWorld/cocos2d/external/uv/include" /external:I "E:/Cocos2dx/HelloWorld/cocos2d/external/webp/include/win32" /external:I "E:/Cocos2dx/HelloWorld/cocos2d/external/websockets/include/win32" /external:I "E:/Cocos2dx/HelloWorld/cocos2d/external/curl/include/win32" /external:I "E:/Cocos2dx/HelloWorld/cocos2d/external/png/include/win32" /external:I "E:/Cocos2dx/HelloWorld/cocos2d/external/win32-specific/gles/include/OGLES" /external:I "E:/Cocos2dx/HelloWorld/cocos2d/external/win32-specific/icon/include" /external:I "E:/Cocos2dx/HelloWorld/cocos2d/external/win32-specific/MP3Decoder/include" /external:I "E:/Cocos2dx/HelloWorld/cocos2d/external/win32-specific/OggDecoder/include" /external:I "E:/Cocos2dx/HelloWorld/cocos2d/external/win32-specific/OpenalSoft/include" /external:I "E:/Cocos2dx/HelloWorld/cocos2d/external/glfw3/include/win32" /external:I "E:/Cocos2dx/HelloWorld/cocos2d/external/zlib/../win32-specific/zlib/include"</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ExternalWarningLevel>TurnOffAllWarnings</ExternalWarningLevel>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;LWS_WITH_LIBUV;CMAKE_INTDIR="Release"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;LWS_WITH_LIBUV;CMAKE_INTDIR=\"Release\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>E:\Cocos2dx\HelloWorld\cocos2d\external\recast\..;E:\Cocos2dx\HelloWorld\cocos2d\external\tinyxml2\.;E:\Cocos2dx\HelloWorld\cocos2d\external\xxhash\.;E:\Cocos2dx\HelloWorld\cocos2d\external\xxtea\.;E:\Cocos2dx\HelloWorld\cocos2d\external\clipper\.;E:\Cocos2dx\HelloWorld\cocos2d\external\edtaa3func\.;E:\Cocos2dx\HelloWorld\cocos2d\external\ConvertUTF\.;E:\Cocos2dx\HelloWorld\cocos2d\external\poly2tri\..;E:\Cocos2dx\HelloWorld\cocos2d\external\md5\..;E:\Cocos2dx\HelloWorld\cocos2d\external\unzip\.;E:\Cocos2dx\HelloWorld\cocos2d\external\Box2D\include;E:\Cocos2dx\HelloWorld\cocos2d\external\chipmunk\include;E:\Cocos2dx\HelloWorld\cocos2d\external\freetype2\include\win32\freetype2;E:\Cocos2dx\HelloWorld\cocos2d\external\bullet\include;E:\Cocos2dx\HelloWorld\cocos2d\external\bullet\include\bullet;E:\Cocos2dx\HelloWorld\cocos2d\external\jpeg\include\win32;E:\Cocos2dx\HelloWorld\cocos2d\external\openssl\include\win32;E:\Cocos2dx\HelloWorld\cocos2d\external\uv\include;E:\Cocos2dx\HelloWorld\cocos2d\external\webp\include\win32;E:\Cocos2dx\HelloWorld\cocos2d\external\websockets\include\win32;E:\Cocos2dx\HelloWorld\cocos2d\external\curl\include\win32;E:\Cocos2dx\HelloWorld\cocos2d\external\png\include\win32;E:\Cocos2dx\HelloWorld\cocos2d\external\win32-specific\gles\include\OGLES;E:\Cocos2dx\HelloWorld\cocos2d\external\win32-specific\icon\include;E:\Cocos2dx\HelloWorld\cocos2d\external\win32-specific\MP3Decoder\include;E:\Cocos2dx\HelloWorld\cocos2d\external\win32-specific\OggDecoder\include;E:\Cocos2dx\HelloWorld\cocos2d\external\win32-specific\OpenalSoft\include;E:\Cocos2dx\HelloWorld\cocos2d\external\glfw3\include\win32;E:\Cocos2dx\HelloWorld\cocos2d\external\zlib\..\win32-specific\zlib\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>E:\Cocos2dx\HelloWorld\cocos2d\external\recast\..;E:\Cocos2dx\HelloWorld\cocos2d\external\tinyxml2\.;E:\Cocos2dx\HelloWorld\cocos2d\external\xxhash\.;E:\Cocos2dx\HelloWorld\cocos2d\external\xxtea\.;E:\Cocos2dx\HelloWorld\cocos2d\external\clipper\.;E:\Cocos2dx\HelloWorld\cocos2d\external\edtaa3func\.;E:\Cocos2dx\HelloWorld\cocos2d\external\ConvertUTF\.;E:\Cocos2dx\HelloWorld\cocos2d\external\poly2tri\..;E:\Cocos2dx\HelloWorld\cocos2d\external\md5\..;E:\Cocos2dx\HelloWorld\cocos2d\external\unzip\.;E:\Cocos2dx\HelloWorld\cocos2d\external\Box2D\include;E:\Cocos2dx\HelloWorld\cocos2d\external\chipmunk\include;E:\Cocos2dx\HelloWorld\cocos2d\external\freetype2\include\win32\freetype2;E:\Cocos2dx\HelloWorld\cocos2d\external\bullet\include;E:\Cocos2dx\HelloWorld\cocos2d\external\bullet\include\bullet;E:\Cocos2dx\HelloWorld\cocos2d\external\jpeg\include\win32;E:\Cocos2dx\HelloWorld\cocos2d\external\openssl\include\win32;E:\Cocos2dx\HelloWorld\cocos2d\external\uv\include;E:\Cocos2dx\HelloWorld\cocos2d\external\webp\include\win32;E:\Cocos2dx\HelloWorld\cocos2d\external\websockets\include\win32;E:\Cocos2dx\HelloWorld\cocos2d\external\curl\include\win32;E:\Cocos2dx\HelloWorld\cocos2d\external\png\include\win32;E:\Cocos2dx\HelloWorld\cocos2d\external\win32-specific\gles\include\OGLES;E:\Cocos2dx\HelloWorld\cocos2d\external\win32-specific\icon\include;E:\Cocos2dx\HelloWorld\cocos2d\external\win32-specific\MP3Decoder\include;E:\Cocos2dx\HelloWorld\cocos2d\external\win32-specific\OggDecoder\include;E:\Cocos2dx\HelloWorld\cocos2d\external\win32-specific\OpenalSoft\include;E:\Cocos2dx\HelloWorld\cocos2d\external\glfw3\include\win32;E:\Cocos2dx\HelloWorld\cocos2d\external\zlib\..\win32-specific\zlib\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>E:\Cocos2dx\HelloWorld\cocos2d\external\recast\..;E:\Cocos2dx\HelloWorld\cocos2d\external\tinyxml2\.;E:\Cocos2dx\HelloWorld\cocos2d\external\xxhash\.;E:\Cocos2dx\HelloWorld\cocos2d\external\xxtea\.;E:\Cocos2dx\HelloWorld\cocos2d\external\clipper\.;E:\Cocos2dx\HelloWorld\cocos2d\external\edtaa3func\.;E:\Cocos2dx\HelloWorld\cocos2d\external\ConvertUTF\.;E:\Cocos2dx\HelloWorld\cocos2d\external\poly2tri\..;E:\Cocos2dx\HelloWorld\cocos2d\external\md5\..;E:\Cocos2dx\HelloWorld\cocos2d\external\unzip\.;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /external:I "E:/Cocos2dx/HelloWorld/cocos2d/external/Box2D/include" /external:I "E:/Cocos2dx/HelloWorld/cocos2d/external/chipmunk/include" /external:I "E:/Cocos2dx/HelloWorld/cocos2d/external/freetype2/include/win32/freetype2" /external:I "E:/Cocos2dx/HelloWorld/cocos2d/external/bullet/include" /external:I "E:/Cocos2dx/HelloWorld/cocos2d/external/bullet/include/bullet" /external:I "E:/Cocos2dx/HelloWorld/cocos2d/external/jpeg/include/win32" /external:I "E:/Cocos2dx/HelloWorld/cocos2d/external/openssl/include/win32" /external:I "E:/Cocos2dx/HelloWorld/cocos2d/external/uv/include" /external:I "E:/Cocos2dx/HelloWorld/cocos2d/external/webp/include/win32" /external:I "E:/Cocos2dx/HelloWorld/cocos2d/external/websockets/include/win32" /external:I "E:/Cocos2dx/HelloWorld/cocos2d/external/curl/include/win32" /external:I "E:/Cocos2dx/HelloWorld/cocos2d/external/png/include/win32" /external:I "E:/Cocos2dx/HelloWorld/cocos2d/external/win32-specific/gles/include/OGLES" /external:I "E:/Cocos2dx/HelloWorld/cocos2d/external/win32-specific/icon/include" /external:I "E:/Cocos2dx/HelloWorld/cocos2d/external/win32-specific/MP3Decoder/include" /external:I "E:/Cocos2dx/HelloWorld/cocos2d/external/win32-specific/OggDecoder/include" /external:I "E:/Cocos2dx/HelloWorld/cocos2d/external/win32-specific/OpenalSoft/include" /external:I "E:/Cocos2dx/HelloWorld/cocos2d/external/glfw3/include/win32" /external:I "E:/Cocos2dx/HelloWorld/cocos2d/external/zlib/../win32-specific/zlib/include"</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ExternalWarningLevel>TurnOffAllWarnings</ExternalWarningLevel>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;LWS_WITH_LIBUV;CMAKE_INTDIR="MinSizeRel"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;LWS_WITH_LIBUV;CMAKE_INTDIR=\"MinSizeRel\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>E:\Cocos2dx\HelloWorld\cocos2d\external\recast\..;E:\Cocos2dx\HelloWorld\cocos2d\external\tinyxml2\.;E:\Cocos2dx\HelloWorld\cocos2d\external\xxhash\.;E:\Cocos2dx\HelloWorld\cocos2d\external\xxtea\.;E:\Cocos2dx\HelloWorld\cocos2d\external\clipper\.;E:\Cocos2dx\HelloWorld\cocos2d\external\edtaa3func\.;E:\Cocos2dx\HelloWorld\cocos2d\external\ConvertUTF\.;E:\Cocos2dx\HelloWorld\cocos2d\external\poly2tri\..;E:\Cocos2dx\HelloWorld\cocos2d\external\md5\..;E:\Cocos2dx\HelloWorld\cocos2d\external\unzip\.;E:\Cocos2dx\HelloWorld\cocos2d\external\Box2D\include;E:\Cocos2dx\HelloWorld\cocos2d\external\chipmunk\include;E:\Cocos2dx\HelloWorld\cocos2d\external\freetype2\include\win32\freetype2;E:\Cocos2dx\HelloWorld\cocos2d\external\bullet\include;E:\Cocos2dx\HelloWorld\cocos2d\external\bullet\include\bullet;E:\Cocos2dx\HelloWorld\cocos2d\external\jpeg\include\win32;E:\Cocos2dx\HelloWorld\cocos2d\external\openssl\include\win32;E:\Cocos2dx\HelloWorld\cocos2d\external\uv\include;E:\Cocos2dx\HelloWorld\cocos2d\external\webp\include\win32;E:\Cocos2dx\HelloWorld\cocos2d\external\websockets\include\win32;E:\Cocos2dx\HelloWorld\cocos2d\external\curl\include\win32;E:\Cocos2dx\HelloWorld\cocos2d\external\png\include\win32;E:\Cocos2dx\HelloWorld\cocos2d\external\win32-specific\gles\include\OGLES;E:\Cocos2dx\HelloWorld\cocos2d\external\win32-specific\icon\include;E:\Cocos2dx\HelloWorld\cocos2d\external\win32-specific\MP3Decoder\include;E:\Cocos2dx\HelloWorld\cocos2d\external\win32-specific\OggDecoder\include;E:\Cocos2dx\HelloWorld\cocos2d\external\win32-specific\OpenalSoft\include;E:\Cocos2dx\HelloWorld\cocos2d\external\glfw3\include\win32;E:\Cocos2dx\HelloWorld\cocos2d\external\zlib\..\win32-specific\zlib\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>E:\Cocos2dx\HelloWorld\cocos2d\external\recast\..;E:\Cocos2dx\HelloWorld\cocos2d\external\tinyxml2\.;E:\Cocos2dx\HelloWorld\cocos2d\external\xxhash\.;E:\Cocos2dx\HelloWorld\cocos2d\external\xxtea\.;E:\Cocos2dx\HelloWorld\cocos2d\external\clipper\.;E:\Cocos2dx\HelloWorld\cocos2d\external\edtaa3func\.;E:\Cocos2dx\HelloWorld\cocos2d\external\ConvertUTF\.;E:\Cocos2dx\HelloWorld\cocos2d\external\poly2tri\..;E:\Cocos2dx\HelloWorld\cocos2d\external\md5\..;E:\Cocos2dx\HelloWorld\cocos2d\external\unzip\.;E:\Cocos2dx\HelloWorld\cocos2d\external\Box2D\include;E:\Cocos2dx\HelloWorld\cocos2d\external\chipmunk\include;E:\Cocos2dx\HelloWorld\cocos2d\external\freetype2\include\win32\freetype2;E:\Cocos2dx\HelloWorld\cocos2d\external\bullet\include;E:\Cocos2dx\HelloWorld\cocos2d\external\bullet\include\bullet;E:\Cocos2dx\HelloWorld\cocos2d\external\jpeg\include\win32;E:\Cocos2dx\HelloWorld\cocos2d\external\openssl\include\win32;E:\Cocos2dx\HelloWorld\cocos2d\external\uv\include;E:\Cocos2dx\HelloWorld\cocos2d\external\webp\include\win32;E:\Cocos2dx\HelloWorld\cocos2d\external\websockets\include\win32;E:\Cocos2dx\HelloWorld\cocos2d\external\curl\include\win32;E:\Cocos2dx\HelloWorld\cocos2d\external\png\include\win32;E:\Cocos2dx\HelloWorld\cocos2d\external\win32-specific\gles\include\OGLES;E:\Cocos2dx\HelloWorld\cocos2d\external\win32-specific\icon\include;E:\Cocos2dx\HelloWorld\cocos2d\external\win32-specific\MP3Decoder\include;E:\Cocos2dx\HelloWorld\cocos2d\external\win32-specific\OggDecoder\include;E:\Cocos2dx\HelloWorld\cocos2d\external\win32-specific\OpenalSoft\include;E:\Cocos2dx\HelloWorld\cocos2d\external\glfw3\include\win32;E:\Cocos2dx\HelloWorld\cocos2d\external\zlib\..\win32-specific\zlib\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>E:\Cocos2dx\HelloWorld\cocos2d\external\recast\..;E:\Cocos2dx\HelloWorld\cocos2d\external\tinyxml2\.;E:\Cocos2dx\HelloWorld\cocos2d\external\xxhash\.;E:\Cocos2dx\HelloWorld\cocos2d\external\xxtea\.;E:\Cocos2dx\HelloWorld\cocos2d\external\clipper\.;E:\Cocos2dx\HelloWorld\cocos2d\external\edtaa3func\.;E:\Cocos2dx\HelloWorld\cocos2d\external\ConvertUTF\.;E:\Cocos2dx\HelloWorld\cocos2d\external\poly2tri\..;E:\Cocos2dx\HelloWorld\cocos2d\external\md5\..;E:\Cocos2dx\HelloWorld\cocos2d\external\unzip\.;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /external:I "E:/Cocos2dx/HelloWorld/cocos2d/external/Box2D/include" /external:I "E:/Cocos2dx/HelloWorld/cocos2d/external/chipmunk/include" /external:I "E:/Cocos2dx/HelloWorld/cocos2d/external/freetype2/include/win32/freetype2" /external:I "E:/Cocos2dx/HelloWorld/cocos2d/external/bullet/include" /external:I "E:/Cocos2dx/HelloWorld/cocos2d/external/bullet/include/bullet" /external:I "E:/Cocos2dx/HelloWorld/cocos2d/external/jpeg/include/win32" /external:I "E:/Cocos2dx/HelloWorld/cocos2d/external/openssl/include/win32" /external:I "E:/Cocos2dx/HelloWorld/cocos2d/external/uv/include" /external:I "E:/Cocos2dx/HelloWorld/cocos2d/external/webp/include/win32" /external:I "E:/Cocos2dx/HelloWorld/cocos2d/external/websockets/include/win32" /external:I "E:/Cocos2dx/HelloWorld/cocos2d/external/curl/include/win32" /external:I "E:/Cocos2dx/HelloWorld/cocos2d/external/png/include/win32" /external:I "E:/Cocos2dx/HelloWorld/cocos2d/external/win32-specific/gles/include/OGLES" /external:I "E:/Cocos2dx/HelloWorld/cocos2d/external/win32-specific/icon/include" /external:I "E:/Cocos2dx/HelloWorld/cocos2d/external/win32-specific/MP3Decoder/include" /external:I "E:/Cocos2dx/HelloWorld/cocos2d/external/win32-specific/OggDecoder/include" /external:I "E:/Cocos2dx/HelloWorld/cocos2d/external/win32-specific/OpenalSoft/include" /external:I "E:/Cocos2dx/HelloWorld/cocos2d/external/glfw3/include/win32" /external:I "E:/Cocos2dx/HelloWorld/cocos2d/external/zlib/../win32-specific/zlib/include"</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ExternalWarningLevel>TurnOffAllWarnings</ExternalWarningLevel>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;LWS_WITH_LIBUV;CMAKE_INTDIR="RelWithDebInfo"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;LWS_WITH_LIBUV;CMAKE_INTDIR=\"RelWithDebInfo\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>E:\Cocos2dx\HelloWorld\cocos2d\external\recast\..;E:\Cocos2dx\HelloWorld\cocos2d\external\tinyxml2\.;E:\Cocos2dx\HelloWorld\cocos2d\external\xxhash\.;E:\Cocos2dx\HelloWorld\cocos2d\external\xxtea\.;E:\Cocos2dx\HelloWorld\cocos2d\external\clipper\.;E:\Cocos2dx\HelloWorld\cocos2d\external\edtaa3func\.;E:\Cocos2dx\HelloWorld\cocos2d\external\ConvertUTF\.;E:\Cocos2dx\HelloWorld\cocos2d\external\poly2tri\..;E:\Cocos2dx\HelloWorld\cocos2d\external\md5\..;E:\Cocos2dx\HelloWorld\cocos2d\external\unzip\.;E:\Cocos2dx\HelloWorld\cocos2d\external\Box2D\include;E:\Cocos2dx\HelloWorld\cocos2d\external\chipmunk\include;E:\Cocos2dx\HelloWorld\cocos2d\external\freetype2\include\win32\freetype2;E:\Cocos2dx\HelloWorld\cocos2d\external\bullet\include;E:\Cocos2dx\HelloWorld\cocos2d\external\bullet\include\bullet;E:\Cocos2dx\HelloWorld\cocos2d\external\jpeg\include\win32;E:\Cocos2dx\HelloWorld\cocos2d\external\openssl\include\win32;E:\Cocos2dx\HelloWorld\cocos2d\external\uv\include;E:\Cocos2dx\HelloWorld\cocos2d\external\webp\include\win32;E:\Cocos2dx\HelloWorld\cocos2d\external\websockets\include\win32;E:\Cocos2dx\HelloWorld\cocos2d\external\curl\include\win32;E:\Cocos2dx\HelloWorld\cocos2d\external\png\include\win32;E:\Cocos2dx\HelloWorld\cocos2d\external\win32-specific\gles\include\OGLES;E:\Cocos2dx\HelloWorld\cocos2d\external\win32-specific\icon\include;E:\Cocos2dx\HelloWorld\cocos2d\external\win32-specific\MP3Decoder\include;E:\Cocos2dx\HelloWorld\cocos2d\external\win32-specific\OggDecoder\include;E:\Cocos2dx\HelloWorld\cocos2d\external\win32-specific\OpenalSoft\include;E:\Cocos2dx\HelloWorld\cocos2d\external\glfw3\include\win32;E:\Cocos2dx\HelloWorld\cocos2d\external\zlib\..\win32-specific\zlib\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>E:\Cocos2dx\HelloWorld\cocos2d\external\recast\..;E:\Cocos2dx\HelloWorld\cocos2d\external\tinyxml2\.;E:\Cocos2dx\HelloWorld\cocos2d\external\xxhash\.;E:\Cocos2dx\HelloWorld\cocos2d\external\xxtea\.;E:\Cocos2dx\HelloWorld\cocos2d\external\clipper\.;E:\Cocos2dx\HelloWorld\cocos2d\external\edtaa3func\.;E:\Cocos2dx\HelloWorld\cocos2d\external\ConvertUTF\.;E:\Cocos2dx\HelloWorld\cocos2d\external\poly2tri\..;E:\Cocos2dx\HelloWorld\cocos2d\external\md5\..;E:\Cocos2dx\HelloWorld\cocos2d\external\unzip\.;E:\Cocos2dx\HelloWorld\cocos2d\external\Box2D\include;E:\Cocos2dx\HelloWorld\cocos2d\external\chipmunk\include;E:\Cocos2dx\HelloWorld\cocos2d\external\freetype2\include\win32\freetype2;E:\Cocos2dx\HelloWorld\cocos2d\external\bullet\include;E:\Cocos2dx\HelloWorld\cocos2d\external\bullet\include\bullet;E:\Cocos2dx\HelloWorld\cocos2d\external\jpeg\include\win32;E:\Cocos2dx\HelloWorld\cocos2d\external\openssl\include\win32;E:\Cocos2dx\HelloWorld\cocos2d\external\uv\include;E:\Cocos2dx\HelloWorld\cocos2d\external\webp\include\win32;E:\Cocos2dx\HelloWorld\cocos2d\external\websockets\include\win32;E:\Cocos2dx\HelloWorld\cocos2d\external\curl\include\win32;E:\Cocos2dx\HelloWorld\cocos2d\external\png\include\win32;E:\Cocos2dx\HelloWorld\cocos2d\external\win32-specific\gles\include\OGLES;E:\Cocos2dx\HelloWorld\cocos2d\external\win32-specific\icon\include;E:\Cocos2dx\HelloWorld\cocos2d\external\win32-specific\MP3Decoder\include;E:\Cocos2dx\HelloWorld\cocos2d\external\win32-specific\OggDecoder\include;E:\Cocos2dx\HelloWorld\cocos2d\external\win32-specific\OpenalSoft\include;E:\Cocos2dx\HelloWorld\cocos2d\external\glfw3\include\win32;E:\Cocos2dx\HelloWorld\cocos2d\external\zlib\..\win32-specific\zlib\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="E:\Cocos2dx\HelloWorld\cocos2d\external\CMakeLists.txt">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">Building Custom Rule E:/Cocos2dx/HelloWorld/cocos2d/external/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">setlocal
+D:\CMake\bin\cmake.exe -SE:/Cocos2dx/HelloWorld -BE:/Cocos2dx/HelloWorld/build --check-stamp-file E:/Cocos2dx/HelloWorld/build/engine/external/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">E:\Cocos2dx\HelloWorld\build\engine\external\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|win32'">Building Custom Rule E:/Cocos2dx/HelloWorld/cocos2d/external/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|win32'">setlocal
+D:\CMake\bin\cmake.exe -SE:/Cocos2dx/HelloWorld -BE:/Cocos2dx/HelloWorld/build --check-stamp-file E:/Cocos2dx/HelloWorld/build/engine/external/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|win32'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|win32'">E:\Cocos2dx\HelloWorld\build\engine\external\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'">Building Custom Rule E:/Cocos2dx/HelloWorld/cocos2d/external/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'">setlocal
+D:\CMake\bin\cmake.exe -SE:/Cocos2dx/HelloWorld -BE:/Cocos2dx/HelloWorld/build --check-stamp-file E:/Cocos2dx/HelloWorld/build/engine/external/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'">E:\Cocos2dx\HelloWorld\build\engine\external\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'">Building Custom Rule E:/Cocos2dx/HelloWorld/cocos2d/external/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'">setlocal
+D:\CMake\bin\cmake.exe -SE:/Cocos2dx/HelloWorld -BE:/Cocos2dx/HelloWorld/build --check-stamp-file E:/Cocos2dx/HelloWorld/build/engine/external/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'">E:\Cocos2dx\HelloWorld\build\engine\external\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="E:\Cocos2dx\HelloWorld\cocos2d\external\empty.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="E:\Cocos2dx\HelloWorld\build\ZERO_CHECK.vcxproj">
+      <Project>{92E18291-2D4F-3B29-B7D6-6E9EAB5C0B55}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="E:\Cocos2dx\HelloWorld\build\engine\external\clipper\ext_clipper.vcxproj">
+      <Project>{638CFC84-A6F1-3586-A35E-BA3851FAE296}</Project>
+      <Name>ext_clipper</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Cocos2dx\HelloWorld\build\engine\external\ConvertUTF\ext_convertUTF.vcxproj">
+      <Project>{801FC340-9CFF-3CEE-BE64-2B2C4C3043E4}</Project>
+      <Name>ext_convertUTF</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Cocos2dx\HelloWorld\build\engine\external\edtaa3func\ext_edtaa3func.vcxproj">
+      <Project>{42B60C9E-B3D3-3FC8-8EE2-149BA35B29A4}</Project>
+      <Name>ext_edtaa3func</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Cocos2dx\HelloWorld\build\engine\external\md5\ext_md5.vcxproj">
+      <Project>{53D0479C-F5FA-377E-8FB2-7775E15A533A}</Project>
+      <Name>ext_md5</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Cocos2dx\HelloWorld\build\engine\external\poly2tri\ext_poly2tri.vcxproj">
+      <Project>{18C267AB-D524-39AA-9C8B-DCF70DC232C2}</Project>
+      <Name>ext_poly2tri</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Cocos2dx\HelloWorld\build\engine\external\recast\ext_recast.vcxproj">
+      <Project>{B0780E8B-1608-32E6-840B-DEC7280202DE}</Project>
+      <Name>ext_recast</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Cocos2dx\HelloWorld\build\engine\external\tinyxml2\ext_tinyxml2.vcxproj">
+      <Project>{14CBDA6C-195A-3202-BC1F-ED1B0069B610}</Project>
+      <Name>ext_tinyxml2</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Cocos2dx\HelloWorld\build\engine\external\unzip\ext_unzip.vcxproj">
+      <Project>{FE4D5C02-F1EA-3066-AAA6-D99A6A7471BD}</Project>
+      <Name>ext_unzip</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Cocos2dx\HelloWorld\build\engine\external\xxhash\ext_xxhash.vcxproj">
+      <Project>{F3C381CD-A338-3E5E-AF24-32EDFDBE1A7F}</Project>
+      <Name>ext_xxhash</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Cocos2dx\HelloWorld\build\engine\external\xxtea\ext_xxtea.vcxproj">
+      <Project>{A73E6474-2874-3A1D-8581-F92641D3B8FC}</Project>
+      <Name>ext_xxtea</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
