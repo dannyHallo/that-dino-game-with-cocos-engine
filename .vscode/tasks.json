@@ -1,0 +1,15 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "compile and run",
+      "type": "shell",
+      "command": "${workspaceFolder}/batch/compile.bat"
+    },
+    {
+      "label": "commit a checkpoint",
+      "type": "shell",
+      "command": "${workspaceFolder}/batch/git.bat"
+    }
+  ]
+}
