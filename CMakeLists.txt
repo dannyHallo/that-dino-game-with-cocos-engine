@@ -59,11 +59,14 @@ list(APPEND GAME_SOURCE
      Classes/AppDelegate.cpp
      Classes/HelloWorldScene.cpp
      Classes/Dino.cpp
+     Classes/Obstructs.cpp
      )
 list(APPEND GAME_HEADER
      Classes/AppDelegate.h
      Classes/HelloWorldScene.h
      Classes/Dino.h
+     Classes/Obstructs.h
+     Classes/Noise.h
      )
 
 if(ANDROID)
