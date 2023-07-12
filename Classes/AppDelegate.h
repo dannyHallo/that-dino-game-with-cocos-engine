@@ -34,6 +34,8 @@
 #define _WINDOWS
 #endif // !_WINDOWS
 
+#define USE_WIN32_CONSOLE
+
 #include "cocos2d.h"
 
 /**
@@ -43,7 +45,7 @@ Private inheritance here hides part of interface from Director.
 */
 class AppDelegate : private cocos2d::Application {
 public:
-  AppDelegate() = default;
+  AppDelegate()          = default;
   virtual ~AppDelegate() = default;
 
   virtual void initGLContextAttrs();

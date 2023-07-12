@@ -22,7 +22,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{7E069E41-040D-392F-89B7-9BA7E18FC9AD}</ProjectGuid>
+    <ProjectGuid>{2F2DB966-A322-34CB-BC14-131026AAC1E9}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
     <WindowsTargetPlatformVersion>10.0.22621.0</WindowsTargetPlatformVersion>
     <Platform>win32</Platform>
@@ -76,9 +76,9 @@
     <PostBuildEvent>
       <Message></Message>
       <Command>setlocal
-D:\CMake\bin\cmake.exe -E echo "    copying to E:/Cocos2dx/HelloWorld/build/bin/HelloWorld/$(Configuration)/Resources"
+D:\CMake\bin\cmake.exe -E echo "    copying to E:/Cocos2dx/DinoWithCocos/build/bin/HelloWorld/$(Configuration)/Resources"
 if %errorlevel% neq 0 goto :cmEnd
-C:\Python27\python.exe E:/Cocos2dx/HelloWorld/cocos2d/cmake/scripts/sync_folder.py -s E:/Cocos2dx/HelloWorld/Resources -d E:/Cocos2dx/HelloWorld/build/bin/HelloWorld/$(Configuration)/Resources
+C:\Python27\python.exe E:/Cocos2dx/DinoWithCocos/cocos2d/cmake/scripts/sync_folder.py -s E:/Cocos2dx/DinoWithCocos/Resources -d E:/Cocos2dx/DinoWithCocos/build/bin/HelloWorld/$(Configuration)/Resources
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -100,9 +100,9 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     <PostBuildEvent>
       <Message></Message>
       <Command>setlocal
-D:\CMake\bin\cmake.exe -E echo "    copying to E:/Cocos2dx/HelloWorld/build/bin/HelloWorld/$(Configuration)/Resources"
+D:\CMake\bin\cmake.exe -E echo "    copying to E:/Cocos2dx/DinoWithCocos/build/bin/HelloWorld/$(Configuration)/Resources"
 if %errorlevel% neq 0 goto :cmEnd
-C:\Python27\python.exe E:/Cocos2dx/HelloWorld/cocos2d/cmake/scripts/sync_folder.py -s E:/Cocos2dx/HelloWorld/Resources -d E:/Cocos2dx/HelloWorld/build/bin/HelloWorld/$(Configuration)/Resources
+C:\Python27\python.exe E:/Cocos2dx/DinoWithCocos/cocos2d/cmake/scripts/sync_folder.py -s E:/Cocos2dx/DinoWithCocos/Resources -d E:/Cocos2dx/DinoWithCocos/build/bin/HelloWorld/$(Configuration)/Resources
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -124,9 +124,9 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     <PostBuildEvent>
       <Message></Message>
       <Command>setlocal
-D:\CMake\bin\cmake.exe -E echo "    copying to E:/Cocos2dx/HelloWorld/build/bin/HelloWorld/$(Configuration)/Resources"
+D:\CMake\bin\cmake.exe -E echo "    copying to E:/Cocos2dx/DinoWithCocos/build/bin/HelloWorld/$(Configuration)/Resources"
 if %errorlevel% neq 0 goto :cmEnd
-C:\Python27\python.exe E:/Cocos2dx/HelloWorld/cocos2d/cmake/scripts/sync_folder.py -s E:/Cocos2dx/HelloWorld/Resources -d E:/Cocos2dx/HelloWorld/build/bin/HelloWorld/$(Configuration)/Resources
+C:\Python27\python.exe E:/Cocos2dx/DinoWithCocos/cocos2d/cmake/scripts/sync_folder.py -s E:/Cocos2dx/DinoWithCocos/Resources -d E:/Cocos2dx/DinoWithCocos/build/bin/HelloWorld/$(Configuration)/Resources
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -148,9 +148,9 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     <PostBuildEvent>
       <Message></Message>
       <Command>setlocal
-D:\CMake\bin\cmake.exe -E echo "    copying to E:/Cocos2dx/HelloWorld/build/bin/HelloWorld/$(Configuration)/Resources"
+D:\CMake\bin\cmake.exe -E echo "    copying to E:/Cocos2dx/DinoWithCocos/build/bin/HelloWorld/$(Configuration)/Resources"
 if %errorlevel% neq 0 goto :cmEnd
-C:\Python27\python.exe E:/Cocos2dx/HelloWorld/cocos2d/cmake/scripts/sync_folder.py -s E:/Cocos2dx/HelloWorld/Resources -d E:/Cocos2dx/HelloWorld/build/bin/HelloWorld/$(Configuration)/Resources
+C:\Python27\python.exe E:/Cocos2dx/DinoWithCocos/cocos2d/cmake/scripts/sync_folder.py -s E:/Cocos2dx/DinoWithCocos/Resources -d E:/Cocos2dx/DinoWithCocos/build/bin/HelloWorld/$(Configuration)/Resources
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -161,7 +161,7 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <CustomBuild Include="E:\Cocos2dx\HelloWorld\build\CMakeFiles\525136603d15ad38167f0b819d06b2a6\SYNC_RESOURCE-HelloWorld.rule">
+    <CustomBuild Include="E:\Cocos2dx\DinoWithCocos\build\CMakeFiles\bff26e60a89629d767c6245dfd13fbb7\SYNC_RESOURCE-HelloWorld.rule">
       <Message Condition="'$(Configuration)|$(Platform)'=='Debug|win32'"></Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">setlocal
 D:\CMake\bin\cmake.exe -E echo "Copying resources for HelloWorld ..."
@@ -173,7 +173,7 @@ exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
       <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">E:\Cocos2dx\HelloWorld\build\CMakeFiles\SYNC_RESOURCE-HelloWorld</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">E:\Cocos2dx\DinoWithCocos\build\CMakeFiles\SYNC_RESOURCE-HelloWorld</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">false</LinkObjects>
       <VerifyInputsAndOutputsExist Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">false</VerifyInputsAndOutputsExist>
       <Message Condition="'$(Configuration)|$(Platform)'=='Release|win32'"></Message>
@@ -187,7 +187,7 @@ exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
       <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|win32'">%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|win32'">E:\Cocos2dx\HelloWorld\build\CMakeFiles\SYNC_RESOURCE-HelloWorld</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|win32'">E:\Cocos2dx\DinoWithCocos\build\CMakeFiles\SYNC_RESOURCE-HelloWorld</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|win32'">false</LinkObjects>
       <VerifyInputsAndOutputsExist Condition="'$(Configuration)|$(Platform)'=='Release|win32'">false</VerifyInputsAndOutputsExist>
       <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'"></Message>
@@ -201,7 +201,7 @@ exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
       <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'">%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'">E:\Cocos2dx\HelloWorld\build\CMakeFiles\SYNC_RESOURCE-HelloWorld</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'">E:\Cocos2dx\DinoWithCocos\build\CMakeFiles\SYNC_RESOURCE-HelloWorld</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'">false</LinkObjects>
       <VerifyInputsAndOutputsExist Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'">false</VerifyInputsAndOutputsExist>
       <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'"></Message>
@@ -215,17 +215,17 @@ exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
       <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'">%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'">E:\Cocos2dx\HelloWorld\build\CMakeFiles\SYNC_RESOURCE-HelloWorld</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'">E:\Cocos2dx\DinoWithCocos\build\CMakeFiles\SYNC_RESOURCE-HelloWorld</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'">false</LinkObjects>
       <VerifyInputsAndOutputsExist Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'">false</VerifyInputsAndOutputsExist>
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>
-    <CustomBuild Include="E:\Cocos2dx\HelloWorld\CMakeLists.txt">
+    <CustomBuild Include="E:\Cocos2dx\DinoWithCocos\CMakeLists.txt">
       <UseUtf8Encoding>Always</UseUtf8Encoding>
-      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">Building Custom Rule E:/Cocos2dx/HelloWorld/CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">Building Custom Rule E:/Cocos2dx/DinoWithCocos/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">setlocal
-D:\CMake\bin\cmake.exe -SE:/Cocos2dx/HelloWorld -BE:/Cocos2dx/HelloWorld/build --check-stamp-file E:/Cocos2dx/HelloWorld/build/CMakeFiles/generate.stamp
+D:\CMake\bin\cmake.exe -SE:/Cocos2dx/DinoWithCocos -BE:/Cocos2dx/DinoWithCocos/build --check-stamp-file E:/Cocos2dx/DinoWithCocos/build/CMakeFiles/generate.stamp
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -233,12 +233,12 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">D:\CMake\share\cmake-3.24\Modules\CMakeCInformation.cmake;D:\CMake\share\cmake-3.24\Modules\CMakeCXXInformation.cmake;D:\CMake\share\cmake-3.24\Modules\CMakeCommonLanguageInclude.cmake;D:\CMake\share\cmake-3.24\Modules\CMakeGenericSystem.cmake;D:\CMake\share\cmake-3.24\Modules\CMakeInitializeConfigs.cmake;D:\CMake\share\cmake-3.24\Modules\CMakeLanguageInformation.cmake;D:\CMake\share\cmake-3.24\Modules\CMakeParseArguments.cmake;D:\CMake\share\cmake-3.24\Modules\CMakeRCInformation.cmake;D:\CMake\share\cmake-3.24\Modules\CMakeSystemSpecificInformation.cmake;D:\CMake\share\cmake-3.24\Modules\CMakeSystemSpecificInitialize.cmake;D:\CMake\share\cmake-3.24\Modules\Compiler\CMakeCommonCompilerMacros.cmake;D:\CMake\share\cmake-3.24\Modules\Compiler\MSVC-C.cmake;D:\CMake\share\cmake-3.24\Modules\Compiler\MSVC-CXX.cmake;D:\CMake\share\cmake-3.24\Modules\Compiler\MSVC.cmake;D:\CMake\share\cmake-3.24\Modules\Platform\Windows-MSVC-C.cmake;D:\CMake\share\cmake-3.24\Modules\Platform\Windows-MSVC-CXX.cmake;D:\CMake\share\cmake-3.24\Modules\Platform\Windows-MSVC.cmake;D:\CMake\share\cmake-3.24\Modules\Platform\Windows.cmake;D:\CMake\share\cmake-3.24\Modules\Platform\WindowsPaths.cmake;E:\Cocos2dx\HelloWorld\build\CMakeFiles\3.24.2\CMakeCCompiler.cmake;E:\Cocos2dx\HelloWorld\build\CMakeFiles\3.24.2\CMakeCXXCompiler.cmake;E:\Cocos2dx\HelloWorld\build\CMakeFiles\3.24.2\CMakeRCCompiler.cmake;E:\Cocos2dx\HelloWorld\build\CMakeFiles\3.24.2\CMakeSystem.cmake;E:\Cocos2dx\HelloWorld\cocos2d\cmake\Modules\CocosBuildHelpers.cmake;E:\Cocos2dx\HelloWorld\cocos2d\cmake\Modules\CocosBuildSet.cmake;E:\Cocos2dx\HelloWorld\cocos2d\cmake\Modules\CocosConfigDefine.cmake;E:\Cocos2dx\HelloWorld\cocos2d\cmake\Modules\CocosConfigDepend.cmake;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">E:\Cocos2dx\HelloWorld\build\CMakeFiles\generate.stamp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">D:\CMake\share\cmake-3.24\Modules\CMakeCInformation.cmake;D:\CMake\share\cmake-3.24\Modules\CMakeCXXInformation.cmake;D:\CMake\share\cmake-3.24\Modules\CMakeCommonLanguageInclude.cmake;D:\CMake\share\cmake-3.24\Modules\CMakeGenericSystem.cmake;D:\CMake\share\cmake-3.24\Modules\CMakeInitializeConfigs.cmake;D:\CMake\share\cmake-3.24\Modules\CMakeLanguageInformation.cmake;D:\CMake\share\cmake-3.24\Modules\CMakeParseArguments.cmake;D:\CMake\share\cmake-3.24\Modules\CMakeRCInformation.cmake;D:\CMake\share\cmake-3.24\Modules\CMakeSystemSpecificInformation.cmake;D:\CMake\share\cmake-3.24\Modules\CMakeSystemSpecificInitialize.cmake;D:\CMake\share\cmake-3.24\Modules\Compiler\CMakeCommonCompilerMacros.cmake;D:\CMake\share\cmake-3.24\Modules\Compiler\MSVC-C.cmake;D:\CMake\share\cmake-3.24\Modules\Compiler\MSVC-CXX.cmake;D:\CMake\share\cmake-3.24\Modules\Compiler\MSVC.cmake;D:\CMake\share\cmake-3.24\Modules\Platform\Windows-MSVC-C.cmake;D:\CMake\share\cmake-3.24\Modules\Platform\Windows-MSVC-CXX.cmake;D:\CMake\share\cmake-3.24\Modules\Platform\Windows-MSVC.cmake;D:\CMake\share\cmake-3.24\Modules\Platform\Windows.cmake;D:\CMake\share\cmake-3.24\Modules\Platform\WindowsPaths.cmake;E:\Cocos2dx\DinoWithCocos\build\CMakeFiles\3.24.2\CMakeCCompiler.cmake;E:\Cocos2dx\DinoWithCocos\build\CMakeFiles\3.24.2\CMakeCXXCompiler.cmake;E:\Cocos2dx\DinoWithCocos\build\CMakeFiles\3.24.2\CMakeRCCompiler.cmake;E:\Cocos2dx\DinoWithCocos\build\CMakeFiles\3.24.2\CMakeSystem.cmake;E:\Cocos2dx\DinoWithCocos\cocos2d\cmake\Modules\CocosBuildHelpers.cmake;E:\Cocos2dx\DinoWithCocos\cocos2d\cmake\Modules\CocosBuildSet.cmake;E:\Cocos2dx\DinoWithCocos\cocos2d\cmake\Modules\CocosConfigDefine.cmake;E:\Cocos2dx\DinoWithCocos\cocos2d\cmake\Modules\CocosConfigDepend.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">E:\Cocos2dx\DinoWithCocos\build\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">false</LinkObjects>
-      <Message Condition="'$(Configuration)|$(Platform)'=='Release|win32'">Building Custom Rule E:/Cocos2dx/HelloWorld/CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|win32'">Building Custom Rule E:/Cocos2dx/DinoWithCocos/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Release|win32'">setlocal
-D:\CMake\bin\cmake.exe -SE:/Cocos2dx/HelloWorld -BE:/Cocos2dx/HelloWorld/build --check-stamp-file E:/Cocos2dx/HelloWorld/build/CMakeFiles/generate.stamp
+D:\CMake\bin\cmake.exe -SE:/Cocos2dx/DinoWithCocos -BE:/Cocos2dx/DinoWithCocos/build --check-stamp-file E:/Cocos2dx/DinoWithCocos/build/CMakeFiles/generate.stamp
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -246,12 +246,12 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|win32'">D:\CMake\share\cmake-3.24\Modules\CMakeCInformation.cmake;D:\CMake\share\cmake-3.24\Modules\CMakeCXXInformation.cmake;D:\CMake\share\cmake-3.24\Modules\CMakeCommonLanguageInclude.cmake;D:\CMake\share\cmake-3.24\Modules\CMakeGenericSystem.cmake;D:\CMake\share\cmake-3.24\Modules\CMakeInitializeConfigs.cmake;D:\CMake\share\cmake-3.24\Modules\CMakeLanguageInformation.cmake;D:\CMake\share\cmake-3.24\Modules\CMakeParseArguments.cmake;D:\CMake\share\cmake-3.24\Modules\CMakeRCInformation.cmake;D:\CMake\share\cmake-3.24\Modules\CMakeSystemSpecificInformation.cmake;D:\CMake\share\cmake-3.24\Modules\CMakeSystemSpecificInitialize.cmake;D:\CMake\share\cmake-3.24\Modules\Compiler\CMakeCommonCompilerMacros.cmake;D:\CMake\share\cmake-3.24\Modules\Compiler\MSVC-C.cmake;D:\CMake\share\cmake-3.24\Modules\Compiler\MSVC-CXX.cmake;D:\CMake\share\cmake-3.24\Modules\Compiler\MSVC.cmake;D:\CMake\share\cmake-3.24\Modules\Platform\Windows-MSVC-C.cmake;D:\CMake\share\cmake-3.24\Modules\Platform\Windows-MSVC-CXX.cmake;D:\CMake\share\cmake-3.24\Modules\Platform\Windows-MSVC.cmake;D:\CMake\share\cmake-3.24\Modules\Platform\Windows.cmake;D:\CMake\share\cmake-3.24\Modules\Platform\WindowsPaths.cmake;E:\Cocos2dx\HelloWorld\build\CMakeFiles\3.24.2\CMakeCCompiler.cmake;E:\Cocos2dx\HelloWorld\build\CMakeFiles\3.24.2\CMakeCXXCompiler.cmake;E:\Cocos2dx\HelloWorld\build\CMakeFiles\3.24.2\CMakeRCCompiler.cmake;E:\Cocos2dx\HelloWorld\build\CMakeFiles\3.24.2\CMakeSystem.cmake;E:\Cocos2dx\HelloWorld\cocos2d\cmake\Modules\CocosBuildHelpers.cmake;E:\Cocos2dx\HelloWorld\cocos2d\cmake\Modules\CocosBuildSet.cmake;E:\Cocos2dx\HelloWorld\cocos2d\cmake\Modules\CocosConfigDefine.cmake;E:\Cocos2dx\HelloWorld\cocos2d\cmake\Modules\CocosConfigDepend.cmake;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|win32'">E:\Cocos2dx\HelloWorld\build\CMakeFiles\generate.stamp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|win32'">D:\CMake\share\cmake-3.24\Modules\CMakeCInformation.cmake;D:\CMake\share\cmake-3.24\Modules\CMakeCXXInformation.cmake;D:\CMake\share\cmake-3.24\Modules\CMakeCommonLanguageInclude.cmake;D:\CMake\share\cmake-3.24\Modules\CMakeGenericSystem.cmake;D:\CMake\share\cmake-3.24\Modules\CMakeInitializeConfigs.cmake;D:\CMake\share\cmake-3.24\Modules\CMakeLanguageInformation.cmake;D:\CMake\share\cmake-3.24\Modules\CMakeParseArguments.cmake;D:\CMake\share\cmake-3.24\Modules\CMakeRCInformation.cmake;D:\CMake\share\cmake-3.24\Modules\CMakeSystemSpecificInformation.cmake;D:\CMake\share\cmake-3.24\Modules\CMakeSystemSpecificInitialize.cmake;D:\CMake\share\cmake-3.24\Modules\Compiler\CMakeCommonCompilerMacros.cmake;D:\CMake\share\cmake-3.24\Modules\Compiler\MSVC-C.cmake;D:\CMake\share\cmake-3.24\Modules\Compiler\MSVC-CXX.cmake;D:\CMake\share\cmake-3.24\Modules\Compiler\MSVC.cmake;D:\CMake\share\cmake-3.24\Modules\Platform\Windows-MSVC-C.cmake;D:\CMake\share\cmake-3.24\Modules\Platform\Windows-MSVC-CXX.cmake;D:\CMake\share\cmake-3.24\Modules\Platform\Windows-MSVC.cmake;D:\CMake\share\cmake-3.24\Modules\Platform\Windows.cmake;D:\CMake\share\cmake-3.24\Modules\Platform\WindowsPaths.cmake;E:\Cocos2dx\DinoWithCocos\build\CMakeFiles\3.24.2\CMakeCCompiler.cmake;E:\Cocos2dx\DinoWithCocos\build\CMakeFiles\3.24.2\CMakeCXXCompiler.cmake;E:\Cocos2dx\DinoWithCocos\build\CMakeFiles\3.24.2\CMakeRCCompiler.cmake;E:\Cocos2dx\DinoWithCocos\build\CMakeFiles\3.24.2\CMakeSystem.cmake;E:\Cocos2dx\DinoWithCocos\cocos2d\cmake\Modules\CocosBuildHelpers.cmake;E:\Cocos2dx\DinoWithCocos\cocos2d\cmake\Modules\CocosBuildSet.cmake;E:\Cocos2dx\DinoWithCocos\cocos2d\cmake\Modules\CocosConfigDefine.cmake;E:\Cocos2dx\DinoWithCocos\cocos2d\cmake\Modules\CocosConfigDepend.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|win32'">E:\Cocos2dx\DinoWithCocos\build\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|win32'">false</LinkObjects>
-      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'">Building Custom Rule E:/Cocos2dx/HelloWorld/CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'">Building Custom Rule E:/Cocos2dx/DinoWithCocos/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'">setlocal
-D:\CMake\bin\cmake.exe -SE:/Cocos2dx/HelloWorld -BE:/Cocos2dx/HelloWorld/build --check-stamp-file E:/Cocos2dx/HelloWorld/build/CMakeFiles/generate.stamp
+D:\CMake\bin\cmake.exe -SE:/Cocos2dx/DinoWithCocos -BE:/Cocos2dx/DinoWithCocos/build --check-stamp-file E:/Cocos2dx/DinoWithCocos/build/CMakeFiles/generate.stamp
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -259,12 +259,12 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'">D:\CMake\share\cmake-3.24\Modules\CMakeCInformation.cmake;D:\CMake\share\cmake-3.24\Modules\CMakeCXXInformation.cmake;D:\CMake\share\cmake-3.24\Modules\CMakeCommonLanguageInclude.cmake;D:\CMake\share\cmake-3.24\Modules\CMakeGenericSystem.cmake;D:\CMake\share\cmake-3.24\Modules\CMakeInitializeConfigs.cmake;D:\CMake\share\cmake-3.24\Modules\CMakeLanguageInformation.cmake;D:\CMake\share\cmake-3.24\Modules\CMakeParseArguments.cmake;D:\CMake\share\cmake-3.24\Modules\CMakeRCInformation.cmake;D:\CMake\share\cmake-3.24\Modules\CMakeSystemSpecificInformation.cmake;D:\CMake\share\cmake-3.24\Modules\CMakeSystemSpecificInitialize.cmake;D:\CMake\share\cmake-3.24\Modules\Compiler\CMakeCommonCompilerMacros.cmake;D:\CMake\share\cmake-3.24\Modules\Compiler\MSVC-C.cmake;D:\CMake\share\cmake-3.24\Modules\Compiler\MSVC-CXX.cmake;D:\CMake\share\cmake-3.24\Modules\Compiler\MSVC.cmake;D:\CMake\share\cmake-3.24\Modules\Platform\Windows-MSVC-C.cmake;D:\CMake\share\cmake-3.24\Modules\Platform\Windows-MSVC-CXX.cmake;D:\CMake\share\cmake-3.24\Modules\Platform\Windows-MSVC.cmake;D:\CMake\share\cmake-3.24\Modules\Platform\Windows.cmake;D:\CMake\share\cmake-3.24\Modules\Platform\WindowsPaths.cmake;E:\Cocos2dx\HelloWorld\build\CMakeFiles\3.24.2\CMakeCCompiler.cmake;E:\Cocos2dx\HelloWorld\build\CMakeFiles\3.24.2\CMakeCXXCompiler.cmake;E:\Cocos2dx\HelloWorld\build\CMakeFiles\3.24.2\CMakeRCCompiler.cmake;E:\Cocos2dx\HelloWorld\build\CMakeFiles\3.24.2\CMakeSystem.cmake;E:\Cocos2dx\HelloWorld\cocos2d\cmake\Modules\CocosBuildHelpers.cmake;E:\Cocos2dx\HelloWorld\cocos2d\cmake\Modules\CocosBuildSet.cmake;E:\Cocos2dx\HelloWorld\cocos2d\cmake\Modules\CocosConfigDefine.cmake;E:\Cocos2dx\HelloWorld\cocos2d\cmake\Modules\CocosConfigDepend.cmake;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'">E:\Cocos2dx\HelloWorld\build\CMakeFiles\generate.stamp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'">D:\CMake\share\cmake-3.24\Modules\CMakeCInformation.cmake;D:\CMake\share\cmake-3.24\Modules\CMakeCXXInformation.cmake;D:\CMake\share\cmake-3.24\Modules\CMakeCommonLanguageInclude.cmake;D:\CMake\share\cmake-3.24\Modules\CMakeGenericSystem.cmake;D:\CMake\share\cmake-3.24\Modules\CMakeInitializeConfigs.cmake;D:\CMake\share\cmake-3.24\Modules\CMakeLanguageInformation.cmake;D:\CMake\share\cmake-3.24\Modules\CMakeParseArguments.cmake;D:\CMake\share\cmake-3.24\Modules\CMakeRCInformation.cmake;D:\CMake\share\cmake-3.24\Modules\CMakeSystemSpecificInformation.cmake;D:\CMake\share\cmake-3.24\Modules\CMakeSystemSpecificInitialize.cmake;D:\CMake\share\cmake-3.24\Modules\Compiler\CMakeCommonCompilerMacros.cmake;D:\CMake\share\cmake-3.24\Modules\Compiler\MSVC-C.cmake;D:\CMake\share\cmake-3.24\Modules\Compiler\MSVC-CXX.cmake;D:\CMake\share\cmake-3.24\Modules\Compiler\MSVC.cmake;D:\CMake\share\cmake-3.24\Modules\Platform\Windows-MSVC-C.cmake;D:\CMake\share\cmake-3.24\Modules\Platform\Windows-MSVC-CXX.cmake;D:\CMake\share\cmake-3.24\Modules\Platform\Windows-MSVC.cmake;D:\CMake\share\cmake-3.24\Modules\Platform\Windows.cmake;D:\CMake\share\cmake-3.24\Modules\Platform\WindowsPaths.cmake;E:\Cocos2dx\DinoWithCocos\build\CMakeFiles\3.24.2\CMakeCCompiler.cmake;E:\Cocos2dx\DinoWithCocos\build\CMakeFiles\3.24.2\CMakeCXXCompiler.cmake;E:\Cocos2dx\DinoWithCocos\build\CMakeFiles\3.24.2\CMakeRCCompiler.cmake;E:\Cocos2dx\DinoWithCocos\build\CMakeFiles\3.24.2\CMakeSystem.cmake;E:\Cocos2dx\DinoWithCocos\cocos2d\cmake\Modules\CocosBuildHelpers.cmake;E:\Cocos2dx\DinoWithCocos\cocos2d\cmake\Modules\CocosBuildSet.cmake;E:\Cocos2dx\DinoWithCocos\cocos2d\cmake\Modules\CocosConfigDefine.cmake;E:\Cocos2dx\DinoWithCocos\cocos2d\cmake\Modules\CocosConfigDepend.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'">E:\Cocos2dx\DinoWithCocos\build\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'">false</LinkObjects>
-      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'">Building Custom Rule E:/Cocos2dx/HelloWorld/CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'">Building Custom Rule E:/Cocos2dx/DinoWithCocos/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'">setlocal
-D:\CMake\bin\cmake.exe -SE:/Cocos2dx/HelloWorld -BE:/Cocos2dx/HelloWorld/build --check-stamp-file E:/Cocos2dx/HelloWorld/build/CMakeFiles/generate.stamp
+D:\CMake\bin\cmake.exe -SE:/Cocos2dx/DinoWithCocos -BE:/Cocos2dx/DinoWithCocos/build --check-stamp-file E:/Cocos2dx/DinoWithCocos/build/CMakeFiles/generate.stamp
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -272,18 +272,18 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'">D:\CMake\share\cmake-3.24\Modules\CMakeCInformation.cmake;D:\CMake\share\cmake-3.24\Modules\CMakeCXXInformation.cmake;D:\CMake\share\cmake-3.24\Modules\CMakeCommonLanguageInclude.cmake;D:\CMake\share\cmake-3.24\Modules\CMakeGenericSystem.cmake;D:\CMake\share\cmake-3.24\Modules\CMakeInitializeConfigs.cmake;D:\CMake\share\cmake-3.24\Modules\CMakeLanguageInformation.cmake;D:\CMake\share\cmake-3.24\Modules\CMakeParseArguments.cmake;D:\CMake\share\cmake-3.24\Modules\CMakeRCInformation.cmake;D:\CMake\share\cmake-3.24\Modules\CMakeSystemSpecificInformation.cmake;D:\CMake\share\cmake-3.24\Modules\CMakeSystemSpecificInitialize.cmake;D:\CMake\share\cmake-3.24\Modules\Compiler\CMakeCommonCompilerMacros.cmake;D:\CMake\share\cmake-3.24\Modules\Compiler\MSVC-C.cmake;D:\CMake\share\cmake-3.24\Modules\Compiler\MSVC-CXX.cmake;D:\CMake\share\cmake-3.24\Modules\Compiler\MSVC.cmake;D:\CMake\share\cmake-3.24\Modules\Platform\Windows-MSVC-C.cmake;D:\CMake\share\cmake-3.24\Modules\Platform\Windows-MSVC-CXX.cmake;D:\CMake\share\cmake-3.24\Modules\Platform\Windows-MSVC.cmake;D:\CMake\share\cmake-3.24\Modules\Platform\Windows.cmake;D:\CMake\share\cmake-3.24\Modules\Platform\WindowsPaths.cmake;E:\Cocos2dx\HelloWorld\build\CMakeFiles\3.24.2\CMakeCCompiler.cmake;E:\Cocos2dx\HelloWorld\build\CMakeFiles\3.24.2\CMakeCXXCompiler.cmake;E:\Cocos2dx\HelloWorld\build\CMakeFiles\3.24.2\CMakeRCCompiler.cmake;E:\Cocos2dx\HelloWorld\build\CMakeFiles\3.24.2\CMakeSystem.cmake;E:\Cocos2dx\HelloWorld\cocos2d\cmake\Modules\CocosBuildHelpers.cmake;E:\Cocos2dx\HelloWorld\cocos2d\cmake\Modules\CocosBuildSet.cmake;E:\Cocos2dx\HelloWorld\cocos2d\cmake\Modules\CocosConfigDefine.cmake;E:\Cocos2dx\HelloWorld\cocos2d\cmake\Modules\CocosConfigDepend.cmake;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'">E:\Cocos2dx\HelloWorld\build\CMakeFiles\generate.stamp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'">D:\CMake\share\cmake-3.24\Modules\CMakeCInformation.cmake;D:\CMake\share\cmake-3.24\Modules\CMakeCXXInformation.cmake;D:\CMake\share\cmake-3.24\Modules\CMakeCommonLanguageInclude.cmake;D:\CMake\share\cmake-3.24\Modules\CMakeGenericSystem.cmake;D:\CMake\share\cmake-3.24\Modules\CMakeInitializeConfigs.cmake;D:\CMake\share\cmake-3.24\Modules\CMakeLanguageInformation.cmake;D:\CMake\share\cmake-3.24\Modules\CMakeParseArguments.cmake;D:\CMake\share\cmake-3.24\Modules\CMakeRCInformation.cmake;D:\CMake\share\cmake-3.24\Modules\CMakeSystemSpecificInformation.cmake;D:\CMake\share\cmake-3.24\Modules\CMakeSystemSpecificInitialize.cmake;D:\CMake\share\cmake-3.24\Modules\Compiler\CMakeCommonCompilerMacros.cmake;D:\CMake\share\cmake-3.24\Modules\Compiler\MSVC-C.cmake;D:\CMake\share\cmake-3.24\Modules\Compiler\MSVC-CXX.cmake;D:\CMake\share\cmake-3.24\Modules\Compiler\MSVC.cmake;D:\CMake\share\cmake-3.24\Modules\Platform\Windows-MSVC-C.cmake;D:\CMake\share\cmake-3.24\Modules\Platform\Windows-MSVC-CXX.cmake;D:\CMake\share\cmake-3.24\Modules\Platform\Windows-MSVC.cmake;D:\CMake\share\cmake-3.24\Modules\Platform\Windows.cmake;D:\CMake\share\cmake-3.24\Modules\Platform\WindowsPaths.cmake;E:\Cocos2dx\DinoWithCocos\build\CMakeFiles\3.24.2\CMakeCCompiler.cmake;E:\Cocos2dx\DinoWithCocos\build\CMakeFiles\3.24.2\CMakeCXXCompiler.cmake;E:\Cocos2dx\DinoWithCocos\build\CMakeFiles\3.24.2\CMakeRCCompiler.cmake;E:\Cocos2dx\DinoWithCocos\build\CMakeFiles\3.24.2\CMakeSystem.cmake;E:\Cocos2dx\DinoWithCocos\cocos2d\cmake\Modules\CocosBuildHelpers.cmake;E:\Cocos2dx\DinoWithCocos\cocos2d\cmake\Modules\CocosBuildSet.cmake;E:\Cocos2dx\DinoWithCocos\cocos2d\cmake\Modules\CocosConfigDefine.cmake;E:\Cocos2dx\DinoWithCocos\cocos2d\cmake\Modules\CocosConfigDepend.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'">E:\Cocos2dx\DinoWithCocos\build\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'">false</LinkObjects>
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>
-    <None Include="E:\Cocos2dx\HelloWorld\build\CMakeFiles\SYNC_RESOURCE-HelloWorld">
+    <None Include="E:\Cocos2dx\DinoWithCocos\build\CMakeFiles\SYNC_RESOURCE-HelloWorld">
     </None>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="E:\Cocos2dx\HelloWorld\build\ZERO_CHECK.vcxproj">
-      <Project>{92E18291-2D4F-3B29-B7D6-6E9EAB5C0B55}</Project>
+    <ProjectReference Include="E:\Cocos2dx\DinoWithCocos\build\ZERO_CHECK.vcxproj">
+      <Project>{C134986E-707C-3493-B486-513F16833AB1}</Project>
       <Name>ZERO_CHECK</Name>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>

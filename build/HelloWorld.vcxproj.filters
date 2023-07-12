@@ -1,104 +1,104 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <ClCompile Include="E:\Cocos2dx\HelloWorld\Classes\AppDelegate.cpp">
+    <ClCompile Include="E:\Cocos2dx\DinoWithCocos\Classes\AppDelegate.cpp">
       <Filter>Source Files\Classes</Filter>
     </ClCompile>
-    <ClCompile Include="E:\Cocos2dx\HelloWorld\Classes\HelloWorldScene.cpp">
+    <ClCompile Include="E:\Cocos2dx\DinoWithCocos\Classes\HelloWorldScene.cpp">
       <Filter>Source Files\Classes</Filter>
     </ClCompile>
-    <ClCompile Include="E:\Cocos2dx\HelloWorld\proj.win32\main.cpp">
+    <ClCompile Include="E:\Cocos2dx\DinoWithCocos\proj.win32\main.cpp">
       <Filter>Source Files\proj.win32</Filter>
     </ClCompile>
-    <ClCompile Include="E:\Cocos2dx\HelloWorld\cocos2d\cocos\precheader.cpp">
+    <ClCompile Include="E:\Cocos2dx\DinoWithCocos\cocos2d\cocos\precheader.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="E:\Cocos2dx\HelloWorld\Classes\AppDelegate.h">
+    <ClInclude Include="E:\Cocos2dx\DinoWithCocos\Classes\AppDelegate.h">
       <Filter>Source Files\Classes</Filter>
     </ClInclude>
-    <ClInclude Include="E:\Cocos2dx\HelloWorld\Classes\HelloWorldScene.h">
+    <ClInclude Include="E:\Cocos2dx\DinoWithCocos\Classes\HelloWorldScene.h">
       <Filter>Source Files\Classes</Filter>
     </ClInclude>
-    <ClInclude Include="E:\Cocos2dx\HelloWorld\proj.win32\main.h">
+    <ClInclude Include="E:\Cocos2dx\DinoWithCocos\proj.win32\main.h">
       <Filter>Source Files\proj.win32</Filter>
     </ClInclude>
-    <ClInclude Include="E:\Cocos2dx\HelloWorld\proj.win32\resource.h">
+    <ClInclude Include="E:\Cocos2dx\DinoWithCocos\proj.win32\resource.h">
       <Filter>Source Files\proj.win32</Filter>
     </ClInclude>
-    <ClInclude Include="E:\Cocos2dx\HelloWorld\Resources\CloseNormal.png">
+    <ClInclude Include="E:\Cocos2dx\DinoWithCocos\Resources\CloseNormal.png">
       <Filter>Resources</Filter>
     </ClInclude>
-    <ClInclude Include="E:\Cocos2dx\HelloWorld\Resources\CloseSelected.png">
+    <ClInclude Include="E:\Cocos2dx\DinoWithCocos\Resources\CloseSelected.png">
       <Filter>Resources</Filter>
     </ClInclude>
-    <ClInclude Include="E:\Cocos2dx\HelloWorld\Resources\HelloWorld.png">
+    <ClInclude Include="E:\Cocos2dx\DinoWithCocos\Resources\HelloWorld.png">
       <Filter>Resources</Filter>
     </ClInclude>
-    <ClInclude Include="E:\Cocos2dx\HelloWorld\Resources\fonts\Marker Felt.ttf">
+    <ClInclude Include="E:\Cocos2dx\DinoWithCocos\Resources\fonts\Marker Felt.ttf">
       <Filter>Resources\fonts</Filter>
     </ClInclude>
-    <ClInclude Include="E:\Cocos2dx\HelloWorld\Resources\fonts\arial.ttf">
+    <ClInclude Include="E:\Cocos2dx\DinoWithCocos\Resources\fonts\arial.ttf">
       <Filter>Resources\fonts</Filter>
     </ClInclude>
-    <ClInclude Include="E:\Cocos2dx\HelloWorld\Resources\res\.gitkeep">
+    <ClInclude Include="E:\Cocos2dx\DinoWithCocos\Resources\res\.gitkeep">
       <Filter>Resources\res</Filter>
     </ClInclude>
-    <ClInclude Include="E:\Cocos2dx\HelloWorld\Resources\res\HD\dinogame.plist">
+    <ClInclude Include="E:\Cocos2dx\DinoWithCocos\Resources\res\HD\dinogame.plist">
       <Filter>Resources\res\HD</Filter>
     </ClInclude>
-    <ClInclude Include="E:\Cocos2dx\HelloWorld\Resources\res\HD\dinogame.png">
+    <ClInclude Include="E:\Cocos2dx\DinoWithCocos\Resources\res\HD\dinogame.png">
       <Filter>Resources\res\HD</Filter>
     </ClInclude>
-    <ClInclude Include="E:\Cocos2dx\HelloWorld\Resources\res\HDR\dinogame.plist">
+    <ClInclude Include="E:\Cocos2dx\DinoWithCocos\Resources\res\HDR\dinogame.plist">
       <Filter>Resources\res\HDR</Filter>
     </ClInclude>
-    <ClInclude Include="E:\Cocos2dx\HelloWorld\Resources\res\HDR\dinogame.png">
+    <ClInclude Include="E:\Cocos2dx\DinoWithCocos\Resources\res\HDR\dinogame.png">
       <Filter>Resources\res\HDR</Filter>
     </ClInclude>
-    <ClInclude Include="E:\Cocos2dx\HelloWorld\Resources\res\SD\dinogame.plist">
+    <ClInclude Include="E:\Cocos2dx\DinoWithCocos\Resources\res\SD\dinogame.plist">
       <Filter>Resources\res\SD</Filter>
     </ClInclude>
-    <ClInclude Include="E:\Cocos2dx\HelloWorld\Resources\res\SD\dinogame.png">
+    <ClInclude Include="E:\Cocos2dx\DinoWithCocos\Resources\res\SD\dinogame.png">
       <Filter>Resources\res\SD</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <CustomBuild Include="E:\Cocos2dx\HelloWorld\CMakeLists.txt" />
+    <CustomBuild Include="E:\Cocos2dx\DinoWithCocos\CMakeLists.txt" />
   </ItemGroup>
   <ItemGroup>
-    <ResourceCompile Include="E:\Cocos2dx\HelloWorld\proj.win32\game.rc">
+    <ResourceCompile Include="E:\Cocos2dx\DinoWithCocos\proj.win32\game.rc">
       <Filter>Source Files\proj.win32</Filter>
     </ResourceCompile>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="Resources">
-      <UniqueIdentifier>{A4BC069A-C797-3576-8DDF-F76279F26A9B}</UniqueIdentifier>
+      <UniqueIdentifier>{F8DD2C1D-04F2-3746-8E2C-C4D4DE3D79A7}</UniqueIdentifier>
     </Filter>
     <Filter Include="Resources\fonts">
-      <UniqueIdentifier>{2397764E-67FC-37E4-94EA-8450F796BE9F}</UniqueIdentifier>
+      <UniqueIdentifier>{A9E0032E-BE38-37E8-93E5-B50DF2D4676D}</UniqueIdentifier>
     </Filter>
     <Filter Include="Resources\res">
-      <UniqueIdentifier>{6A38F076-46E1-3746-A5CB-AA29D1CBAD62}</UniqueIdentifier>
+      <UniqueIdentifier>{D447C7BD-0558-35DF-836A-9603718DDD2A}</UniqueIdentifier>
     </Filter>
     <Filter Include="Resources\res\HD">
-      <UniqueIdentifier>{B7298934-513C-3EEE-90EC-A0F0E6B0DB58}</UniqueIdentifier>
+      <UniqueIdentifier>{E23E3A0B-F72A-3CC5-9E2A-266DAD8C5938}</UniqueIdentifier>
     </Filter>
     <Filter Include="Resources\res\HDR">
-      <UniqueIdentifier>{CFDBE5C1-CD47-3A3A-8041-0B61F1999B96}</UniqueIdentifier>
+      <UniqueIdentifier>{7327F396-665C-3B46-98F3-93CBAF118209}</UniqueIdentifier>
     </Filter>
     <Filter Include="Resources\res\SD">
-      <UniqueIdentifier>{B440F3C2-1343-3364-A13D-8E3027400598}</UniqueIdentifier>
+      <UniqueIdentifier>{9178093A-E2AD-372B-997A-FD79F3DE72C8}</UniqueIdentifier>
     </Filter>
     <Filter Include="Source Files">
-      <UniqueIdentifier>{106C1ECC-4C53-37AD-9D8E-DE0E0921C69C}</UniqueIdentifier>
+      <UniqueIdentifier>{43314BA6-268F-32E9-A543-ABE0C20AF877}</UniqueIdentifier>
     </Filter>
     <Filter Include="Source Files\Classes">
-      <UniqueIdentifier>{434D317B-DA42-34D1-A889-24F72E4B6E9A}</UniqueIdentifier>
+      <UniqueIdentifier>{9C36F3AF-D03D-3067-8AC2-E8803D80D669}</UniqueIdentifier>
     </Filter>
     <Filter Include="Source Files\proj.win32">
-      <UniqueIdentifier>{258845FF-8C89-3FAE-BF14-6BA0EFF78160}</UniqueIdentifier>
+      <UniqueIdentifier>{B91BF5C4-78E0-34DF-A617-04A892A757B5}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>

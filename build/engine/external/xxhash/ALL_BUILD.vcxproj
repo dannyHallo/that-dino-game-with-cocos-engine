@@ -25,7 +25,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{EB862759-88B6-36B8-9BCC-A8B83A2367B5}</ProjectGuid>
+    <ProjectGuid>{9273487A-8358-3F21-8D13-C9C43C998232}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
     <WindowsTargetPlatformVersion>10.0.22621.0</WindowsTargetPlatformVersion>
     <Platform>win32</Platform>
@@ -108,11 +108,11 @@
     </Midl>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <CustomBuild Include="E:\Cocos2dx\HelloWorld\cocos2d\external\xxhash\CMakeLists.txt">
+    <CustomBuild Include="E:\Cocos2dx\DinoWithCocos\cocos2d\external\xxhash\CMakeLists.txt">
       <UseUtf8Encoding>Always</UseUtf8Encoding>
-      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">Building Custom Rule E:/Cocos2dx/HelloWorld/cocos2d/external/xxhash/CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">Building Custom Rule E:/Cocos2dx/DinoWithCocos/cocos2d/external/xxhash/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">setlocal
-D:\CMake\bin\cmake.exe -SE:/Cocos2dx/HelloWorld -BE:/Cocos2dx/HelloWorld/build --check-stamp-file E:/Cocos2dx/HelloWorld/build/engine/external/xxhash/CMakeFiles/generate.stamp
+D:\CMake\bin\cmake.exe -SE:/Cocos2dx/DinoWithCocos -BE:/Cocos2dx/DinoWithCocos/build --check-stamp-file E:/Cocos2dx/DinoWithCocos/build/engine/external/xxhash/CMakeFiles/generate.stamp
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -121,11 +121,11 @@ exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
       <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">E:\Cocos2dx\HelloWorld\build\engine\external\xxhash\CMakeFiles\generate.stamp</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">E:\Cocos2dx\DinoWithCocos\build\engine\external\xxhash\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">false</LinkObjects>
-      <Message Condition="'$(Configuration)|$(Platform)'=='Release|win32'">Building Custom Rule E:/Cocos2dx/HelloWorld/cocos2d/external/xxhash/CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|win32'">Building Custom Rule E:/Cocos2dx/DinoWithCocos/cocos2d/external/xxhash/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Release|win32'">setlocal
-D:\CMake\bin\cmake.exe -SE:/Cocos2dx/HelloWorld -BE:/Cocos2dx/HelloWorld/build --check-stamp-file E:/Cocos2dx/HelloWorld/build/engine/external/xxhash/CMakeFiles/generate.stamp
+D:\CMake\bin\cmake.exe -SE:/Cocos2dx/DinoWithCocos -BE:/Cocos2dx/DinoWithCocos/build --check-stamp-file E:/Cocos2dx/DinoWithCocos/build/engine/external/xxhash/CMakeFiles/generate.stamp
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -134,11 +134,11 @@ exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
       <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|win32'">%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|win32'">E:\Cocos2dx\HelloWorld\build\engine\external\xxhash\CMakeFiles\generate.stamp</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|win32'">E:\Cocos2dx\DinoWithCocos\build\engine\external\xxhash\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|win32'">false</LinkObjects>
-      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'">Building Custom Rule E:/Cocos2dx/HelloWorld/cocos2d/external/xxhash/CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'">Building Custom Rule E:/Cocos2dx/DinoWithCocos/cocos2d/external/xxhash/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'">setlocal
-D:\CMake\bin\cmake.exe -SE:/Cocos2dx/HelloWorld -BE:/Cocos2dx/HelloWorld/build --check-stamp-file E:/Cocos2dx/HelloWorld/build/engine/external/xxhash/CMakeFiles/generate.stamp
+D:\CMake\bin\cmake.exe -SE:/Cocos2dx/DinoWithCocos -BE:/Cocos2dx/DinoWithCocos/build --check-stamp-file E:/Cocos2dx/DinoWithCocos/build/engine/external/xxhash/CMakeFiles/generate.stamp
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -147,11 +147,11 @@ exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
       <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'">%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'">E:\Cocos2dx\HelloWorld\build\engine\external\xxhash\CMakeFiles\generate.stamp</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'">E:\Cocos2dx\DinoWithCocos\build\engine\external\xxhash\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'">false</LinkObjects>
-      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'">Building Custom Rule E:/Cocos2dx/HelloWorld/cocos2d/external/xxhash/CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'">Building Custom Rule E:/Cocos2dx/DinoWithCocos/cocos2d/external/xxhash/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'">setlocal
-D:\CMake\bin\cmake.exe -SE:/Cocos2dx/HelloWorld -BE:/Cocos2dx/HelloWorld/build --check-stamp-file E:/Cocos2dx/HelloWorld/build/engine/external/xxhash/CMakeFiles/generate.stamp
+D:\CMake\bin\cmake.exe -SE:/Cocos2dx/DinoWithCocos -BE:/Cocos2dx/DinoWithCocos/build --check-stamp-file E:/Cocos2dx/DinoWithCocos/build/engine/external/xxhash/CMakeFiles/generate.stamp
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -160,21 +160,21 @@ exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
       <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'">%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'">E:\Cocos2dx\HelloWorld\build\engine\external\xxhash\CMakeFiles\generate.stamp</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'">E:\Cocos2dx\DinoWithCocos\build\engine\external\xxhash\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'">false</LinkObjects>
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="E:\Cocos2dx\HelloWorld\build\ZERO_CHECK.vcxproj">
-      <Project>{92E18291-2D4F-3B29-B7D6-6E9EAB5C0B55}</Project>
+    <ProjectReference Include="E:\Cocos2dx\DinoWithCocos\build\ZERO_CHECK.vcxproj">
+      <Project>{C134986E-707C-3493-B486-513F16833AB1}</Project>
       <Name>ZERO_CHECK</Name>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </ProjectReference>
-    <ProjectReference Include="E:\Cocos2dx\HelloWorld\build\engine\external\xxhash\ext_xxhash.vcxproj">
-      <Project>{F3C381CD-A338-3E5E-AF24-32EDFDBE1A7F}</Project>
+    <ProjectReference Include="E:\Cocos2dx\DinoWithCocos\build\engine\external\xxhash\ext_xxhash.vcxproj">
+      <Project>{7B3E865C-3874-37CB-9D38-9A9D69BAC77C}</Project>
       <Name>ext_xxhash</Name>
     </ProjectReference>
   </ItemGroup>

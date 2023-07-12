@@ -31,17 +31,25 @@
 
 #include "cocos2d.h"
 
-class HelloWorld : public cocos2d::Scene {
+class HelloWorld : public cocos2d::Layer {
 public:
+  // factory method
   static cocos2d::Scene *createScene();
 
+  // initializes the HelloWorld scene, creates game objects and animations
   virtual bool init();
 
   // a selector callback
   void menuCloseCallback(cocos2d::Ref *pSender);
 
-  // implement the "static create()" method manually
+  // CREATE_FUNC is a macro that creates a static method HelloWorld::create(). This method creates a new HelloWorld
+  // object, initialises the memory management and calls init().
   CREATE_FUNC(HelloWorld);
+
+private:
+  // cocos2d::Vector has the limitation that the objects added to it must have cocos2d::Ref as a base class, it helps to
+  // manage memory
+  cocos2d::Vector<cocos2d::SpriteFrame *> getAnimation(const char *format, int count);
 };
 
 #endif // __HELLOWORLD_SCENE_H__
