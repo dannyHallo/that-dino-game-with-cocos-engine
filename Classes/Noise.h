@@ -9,13 +9,16 @@
 namespace Noise {
 static const float invExp = 1 / exp2(24.);
 
+// outputs 2 values between 0 and 1
 static cocos2d::Vec2 ldsNoise2d(long long n) {
   cocos2d::Vec2 p = cocos2d::Vec2(12664746 * n, 9560334 * n) * invExp;
+
   float intPart, fracPart;
   fracPart = modff(p.x, &intPart);
   p.x      = fracPart;
   fracPart = modff(p.y, &intPart);
   p.y      = fracPart;
+
   return p;
 }
 } // namespace Noise

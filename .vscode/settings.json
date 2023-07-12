@@ -1,5 +1,5 @@
 {
-  "C_Cpp.clang_format_fallbackStyle": "{BasedOnStyle: LLVM, AlignConsecutiveAssignments: Consecutive, ColumnLimit: 120}",
+  "C_Cpp.clang_format_fallbackStyle": "{BasedOnStyle: LLVM, AlignConsecutiveAssignments: Consecutive, ColumnLimit: 120,  AllowShortIfStatementsOnASingleLine: true, AllowShortLoopsOnASingleLine: true}",
   "files.associations": {
     "*.cjson": "jsonc",
     "*.wxss": "css",

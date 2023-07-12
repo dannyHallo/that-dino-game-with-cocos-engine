@@ -29,13 +29,16 @@
 #define CC_DLL
 #endif // !CC_DLL
 
-#include "Dino.h"
 #include "cocos2d.h"
+
+#include "Dino.h"
+#include "Obstructs.h"
 
 #include <memory>
 
 class HelloWorld : public cocos2d::Layer {
   std::unique_ptr<Dino> dino;
+  std::unique_ptr<Obstructs> obstructs;
 
 public:
   HelloWorld() {}

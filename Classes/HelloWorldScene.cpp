@@ -23,6 +23,7 @@
  ****************************************************************************/
 
 #include "HelloWorldScene.h"
+#include "Noise.h"
 
 USING_NS_CC;
 
@@ -63,14 +64,20 @@ bool HelloWorld::init() {
   // create dino
   auto runningFrames   = getAnimation("rdino%01d.png", 2);
   auto crouchingFrames = getAnimation("cdino%01d.png", 2);
+  auto plantFrames     = getAnimation("plant%01d.png", 6);
+  auto bigPlantFrames  = getAnimation("bplant%01d.png", 3);
 
-  dino = std::make_unique<Dino>(visibleSize, runningFrames, crouchingFrames, background);
+  obstructs = std::make_unique<Obstructs>(visibleSize, plantFrames, bigPlantFrames, background);
+  dino      = std::make_unique<Dino>(visibleSize, runningFrames, crouchingFrames, background);
 
   scheduleUpdate(); // this is required to call update() method every frame!
   return true;
 }
 
-void HelloWorld::update(float dt) { dino->update(dt); }
+void HelloWorld::update(float dt) {
+  dino->update(dt);
+  obstructs->update(dt);
+}
 
 void HelloWorld::menuCloseCallback(Ref *pSender) {
   // Close the cocos2d-x game scene and quit the application

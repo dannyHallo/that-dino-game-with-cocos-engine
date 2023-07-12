@@ -11,10 +11,10 @@ class Dino {
   const cocos2d::Vec2 cStartingPos;
 
   const float cJumpVelocity = 15.f;
-  const float cMul          = 100.f;
+  const float cTimeMul      = 100.f;
 
-  const float cJumpGravityPressed   = -0.4f;
-  const float cJumpGravityUnpressed = -0.8f;
+  const float cJumpGravityPressed   = -0.6f;
+  const float cJumpGravityUnpressed = -1.f;
   float mJumpGravity                = cJumpGravityUnpressed;
 
   cocos2d::LayerColor *const mBackground;
@@ -42,7 +42,7 @@ public:
   void handleInput(const Input wantTo);
 
   // recalc position of dino, draw dino on screen and check for collisions
-  void update(float dt);
+  void update(const float dt);
 
 private:
   void drawSprite();

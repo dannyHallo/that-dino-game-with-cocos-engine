@@ -6,24 +6,30 @@
 
 #include "cocos2d.h"
 
+#include <deque>
+
 class Obstructs {
   const cocos2d::Vec2 cScreenSize;
-  cocos2d::Vector<cocos2d::Sprite *> mObstructs;
+  std::deque<cocos2d::Sprite *> mObstructs;
+  cocos2d::LayerColor *const mBackground;
+  const cocos2d::Vector<cocos2d::SpriteFrame *> mPlantFrames; 
+  const cocos2d::Vector<cocos2d::SpriteFrame *> mBigPlantFrames;
+
+  cocos2d::Sprite *mSprite;
+
+  const float cGenerationThreshold = 0.982f;
+  float mDinoMoveSpeed             = 7.f;
+  const float cTimeMul             = 100.f;
 
 public:
-  Obstructs(const cocos2d::Vec2 screenSize, cocos2d::LayerColor *background);
+  Obstructs(const cocos2d::Vec2 screenSize, cocos2d::Vector<cocos2d::SpriteFrame *> plantFrames,
+            cocos2d::Vector<cocos2d::SpriteFrame *> bigPlantFrames, cocos2d::LayerColor *background);
 
   ~Obstructs() = default;
 
-  void update(float dt);
+  void update(const float dt);
 
-  void addObstruct();
-
-  void removeObstruct();
-
-  void removeAllObstructs();
-
-  inline cocos2d::Vector<cocos2d::Sprite *> getObstructs() const { return mObstructs; }
-
-  
+private:
+  void recalculatePosition(float dt);
+  void addObstruct(const float randomFac);
 };

@@ -1,5 +1,4 @@
 #include "Dino.h"
-#include "Noise.h"
 
 USING_NS_CC;
 
@@ -10,6 +9,8 @@ Dino::Dino(const cocos2d::Vec2 screenSize, cocos2d::Vector<cocos2d::SpriteFrame 
   // let the dino run forever
   mSprite = cocos2d::Sprite::createWithSpriteFrame(mRunningFrames.front());
   mSprite->setPosition(mPosition);
+  mSprite->setAnchorPoint(Vec2(0.5f, 0.f));
+
   mBackground->addChild(mSprite);
   auto animation =
       Animation::createWithSpriteFrames(mRunningFrames, 0.1f); // 0.1f is the delay (in seconds) between frames
@@ -31,19 +32,15 @@ void Dino::handleInput(const Input input) {
   }
 }
 
-void Dino::update(float dt) {
-  static long long testingVal = 0;
-  testingVal += static_cast<long long>(dt * 1000000);
-  log("testingVal: %lld", testingVal);
-  log("noise: %f", Noise::ldsNoise2d(testingVal).x);
+void Dino::update(const float dt) {
   recalculatePosition(dt);
   drawSprite();
 }
 
 void Dino::recalculatePosition(float dt) {
   if (mIsJumping) {
-    mVelocity += Vec2(0, mJumpGravity) * dt * cMul;
-    mPosition += mVelocity * dt * cMul;
+    mVelocity += Vec2(0, mJumpGravity) * dt * cTimeMul;
+    mPosition += mVelocity * dt * cTimeMul;
   }
 
   if (mPosition.y <= cStartingPos.y) {

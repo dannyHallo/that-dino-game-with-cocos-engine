@@ -10,6 +10,9 @@
     <ClCompile Include="E:\Cocos2dx\DinoWithCocos\Classes\Dino.cpp">
       <Filter>Source Files\Classes</Filter>
     </ClCompile>
+    <ClCompile Include="E:\Cocos2dx\DinoWithCocos\Classes\Obstructs.cpp">
+      <Filter>Source Files\Classes</Filter>
+    </ClCompile>
     <ClCompile Include="E:\Cocos2dx\DinoWithCocos\proj.win32\main.cpp">
       <Filter>Source Files\proj.win32</Filter>
     </ClCompile>
@@ -25,6 +28,12 @@
       <Filter>Source Files\Classes</Filter>
     </ClInclude>
     <ClInclude Include="E:\Cocos2dx\DinoWithCocos\Classes\Dino.h">
+      <Filter>Source Files\Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\Cocos2dx\DinoWithCocos\Classes\Obstructs.h">
+      <Filter>Source Files\Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\Cocos2dx\DinoWithCocos\Classes\Noise.h">
       <Filter>Source Files\Classes</Filter>
     </ClInclude>
     <ClInclude Include="E:\Cocos2dx\DinoWithCocos\proj.win32\main.h">
