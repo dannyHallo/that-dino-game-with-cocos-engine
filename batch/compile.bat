@@ -1,7 +1,7 @@
 @echo off
 
 set PROJECT_NAME=HelloWorld
-set BUILD_TYPE=Debug
+set BUILD_TYPE=Release
 
 echo:
 @echo *************************** cmake ****************************
