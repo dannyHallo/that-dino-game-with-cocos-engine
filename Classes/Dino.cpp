@@ -19,15 +19,38 @@ Dino::Dino(const cocos2d::Vec2 screenSize, cocos2d::Vector<cocos2d::SpriteFrame 
 
 void Dino::handleInput(const Input input) {
   switch (input) {
-  case JUMP:
+  case Dino::Input::JUMP:
     if (!mIsJumping) {
       mVelocity    = Vec2(0, cJumpVelocity);
       mIsJumping   = true;
       mJumpGravity = cJumpGravityPressed;
     }
     break;
-  case CANCEL_JUMP:
+
+  case Dino::Input::CANCEL_JUMP:
     mJumpGravity = cJumpGravityUnpressed;
+    break;
+
+  case Dino::Input::CROUCH:
+    if (!mIsCrouching) {
+      mIsCrouching = true;
+      mSprite->stopAllActions();
+      auto animation =
+          Animation::createWithSpriteFrames(mCrouchingFrames, 0.1f); // 0.1f is the delay (in seconds) between frames
+      mSprite->runAction(RepeatForever::create(Animate::create(animation)));
+      mJumpGravity = cJumpGravityCrouched;
+    }
+    break;
+
+  case Dino::Input::CANCEL_CROUCH:
+    if (mIsCrouching) {
+      mIsCrouching = false;
+      mSprite->stopAllActions();
+      auto animation =
+          Animation::createWithSpriteFrames(mRunningFrames, 0.1f); // 0.1f is the delay (in seconds) between frames
+      mSprite->runAction(RepeatForever::create(Animate::create(animation)));
+      mJumpGravity = cJumpGravityUnpressed;
+    }
     break;
   }
 }

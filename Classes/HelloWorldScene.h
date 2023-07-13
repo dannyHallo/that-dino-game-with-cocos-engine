@@ -32,13 +32,13 @@
 #include "cocos2d.h"
 
 #include "Dino.h"
-#include "Obstructs.h"
+#include "Environment.h"
 
 #include <memory>
 
 class HelloWorld : public cocos2d::Layer {
   std::unique_ptr<Dino> dino;
-  std::unique_ptr<Obstructs> obstructs;
+  std::unique_ptr<Environment> environment;
 
 public:
   HelloWorld() {}

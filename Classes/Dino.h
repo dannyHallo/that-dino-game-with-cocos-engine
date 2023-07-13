@@ -15,6 +15,7 @@ class Dino {
 
   const float cJumpGravityPressed   = -0.6f;
   const float cJumpGravityUnpressed = -1.f;
+  const float cJumpGravityCrouched  = -1.5f;
   float mJumpGravity                = cJumpGravityUnpressed;
 
   cocos2d::LayerColor *const mBackground;

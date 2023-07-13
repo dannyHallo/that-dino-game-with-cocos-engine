@@ -56,7 +56,7 @@ bool HelloWorld::init() {
   Vec2 visibleSize = Director::getInstance()->getVisibleSize();
 
   // create background
-  Color4B backgroundColour = Color4B(83, 83, 83, 255);
+  Color4B backgroundColour = Color4B(100, 100, 100, 255);
   LayerColor *background   = LayerColor::create(backgroundColour, visibleSize.x, visibleSize.y);
   background->setPosition(origin);
   this->addChild(background);
@@ -66,9 +66,10 @@ bool HelloWorld::init() {
   auto crouchingFrames = getAnimation("cdino%01d.png", 2);
   auto plantFrames     = getAnimation("plant%01d.png", 6);
   auto bigPlantFrames  = getAnimation("bplant%01d.png", 3);
+  auto groundSprite    = Sprite::create("ground.png");
 
-  obstructs = std::make_unique<Obstructs>(visibleSize, plantFrames, bigPlantFrames, background);
-  dino      = std::make_unique<Dino>(visibleSize, runningFrames, crouchingFrames, background);
+  environment = std::make_unique<Environment>(visibleSize, plantFrames, bigPlantFrames, groundSprite, background);
+  dino        = std::make_unique<Dino>(visibleSize, runningFrames, crouchingFrames, background);
 
   scheduleUpdate(); // this is required to call update() method every frame!
   return true;
@@ -76,7 +77,7 @@ bool HelloWorld::init() {
 
 void HelloWorld::update(float dt) {
   dino->update(dt);
-  obstructs->update(dt);
+  environment->update(dt);
 }
 
 void HelloWorld::menuCloseCallback(Ref *pSender) {
@@ -115,11 +116,21 @@ void HelloWorld::onKeyPressed(EventKeyboard::KeyCode keyCode, Event *event) {
   if (keyCode == EventKeyboard::KeyCode::KEY_SPACE) {
     dino->handleInput(Dino::Input::JUMP);
   }
+
+  // press down arrow to crouch
+  if (keyCode == EventKeyboard::KeyCode::KEY_DOWN_ARROW) {
+    dino->handleInput(Dino::Input::CROUCH);
+  }
 }
 
 void HelloWorld::onKeyReleased(EventKeyboard::KeyCode keyCode, Event *event) {
-  // press space to jump
+  // release space to cancel jump
   if (keyCode == EventKeyboard::KeyCode::KEY_SPACE) {
     dino->handleInput(Dino::Input::CANCEL_JUMP);
+  }
+
+  // release down arrow to cancel crouch
+  if (keyCode == EventKeyboard::KeyCode::KEY_DOWN_ARROW) {
+    dino->handleInput(Dino::Input::CANCEL_CROUCH);
   }
 }
