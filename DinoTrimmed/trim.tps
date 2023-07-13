@@ -24,40 +24,6 @@
                     <int>-1</int>
                 </QSize>
             </struct>
-            <struct type="AutoSDSettings">
-                <key>scale</key>
-                <double>0.5</double>
-                <key>extension</key>
-                <string>/HD/</string>
-                <key>spriteFilter</key>
-                <string></string>
-                <key>acceptFractionalValues</key>
-                <false/>
-                <key>maxTextureSize</key>
-                <QSize>
-                    <key>width</key>
-                    <int>-1</int>
-                    <key>height</key>
-                    <int>-1</int>
-                </QSize>
-            </struct>
-            <struct type="AutoSDSettings">
-                <key>scale</key>
-                <double>0.25</double>
-                <key>extension</key>
-                <string>/SD/</string>
-                <key>spriteFilter</key>
-                <string></string>
-                <key>acceptFractionalValues</key>
-                <false/>
-                <key>maxTextureSize</key>
-                <QSize>
-                    <key>width</key>
-                    <int>-1</int>
-                    <key>height</key>
-                    <int>-1</int>
-                </QSize>
-            </struct>
         </array>
         <key>allowRotation</key>
         <true/>
@@ -201,7 +167,7 @@
             <key>trimMargin</key>
             <uint>1</uint>
             <key>trimMode</key>
-            <enum type="SpriteSettings::TrimMode">Polygon</enum>
+            <enum type="SpriteSettings::TrimMode">Trim</enum>
             <key>tracerTolerance</key>
             <int>200</int>
             <key>heuristicMask</key>
@@ -260,6 +226,21 @@
                 <key>scale9FromFile</key>
                 <false/>
             </struct>
+            <key type="filename">bplant4.png</key>
+            <struct type="IndividualSpriteSettings">
+                <key>pivotPoint</key>
+                <point_f>0.5,0.5</point_f>
+                <key>spriteScale</key>
+                <double>1</double>
+                <key>scale9Enabled</key>
+                <false/>
+                <key>scale9Borders</key>
+                <rect>26,25,51,50</rect>
+                <key>scale9Paddings</key>
+                <rect>26,25,51,50</rect>
+                <key>scale9FromFile</key>
+                <false/>
+            </struct>
             <key type="filename">cdino1.png</key>
             <key type="filename">cdino2.png</key>
             <struct type="IndividualSpriteSettings">
@@ -307,6 +288,21 @@
                 <key>scale9FromFile</key>
                 <false/>
             </struct>
+            <key type="filename">gameover.png</key>
+            <struct type="IndividualSpriteSettings">
+                <key>pivotPoint</key>
+                <point_f>0.5,0.5</point_f>
+                <key>spriteScale</key>
+                <double>1</double>
+                <key>scale9Enabled</key>
+                <false/>
+                <key>scale9Borders</key>
+                <rect>96,5,191,11</rect>
+                <key>scale9Paddings</key>
+                <rect>96,5,191,11</rect>
+                <key>scale9FromFile</key>
+                <false/>
+            </struct>
             <key type="filename">moon1.png</key>
             <key type="filename">moon2.png</key>
             <key type="filename">moon3.png</key>
@@ -339,6 +335,44 @@
                 <rect>20,20,40,40</rect>
                 <key>scale9Paddings</key>
                 <rect>20,20,40,40</rect>
+                <key>scale9FromFile</key>
+                <false/>
+            </struct>
+            <key type="filename">num1.png</key>
+            <key type="filename">num10.png</key>
+            <key type="filename">num3.png</key>
+            <key type="filename">num4.png</key>
+            <key type="filename">num5.png</key>
+            <key type="filename">num6.png</key>
+            <key type="filename">num7.png</key>
+            <key type="filename">num8.png</key>
+            <key type="filename">num9.png</key>
+            <struct type="IndividualSpriteSettings">
+                <key>pivotPoint</key>
+                <point_f>0.5,0.5</point_f>
+                <key>spriteScale</key>
+                <double>1</double>
+                <key>scale9Enabled</key>
+                <false/>
+                <key>scale9Borders</key>
+                <rect>5,5,9,11</rect>
+                <key>scale9Paddings</key>
+                <rect>5,5,9,11</rect>
+                <key>scale9FromFile</key>
+                <false/>
+            </struct>
+            <key type="filename">num2.png</key>
+            <struct type="IndividualSpriteSettings">
+                <key>pivotPoint</key>
+                <point_f>0.5,0.5</point_f>
+                <key>spriteScale</key>
+                <double>1</double>
+                <key>scale9Enabled</key>
+                <false/>
+                <key>scale9Borders</key>
+                <rect>4,5,8,11</rect>
+                <key>scale9Paddings</key>
+                <rect>4,5,8,11</rect>
                 <key>scale9FromFile</key>
                 <false/>
             </struct>
@@ -390,10 +424,12 @@
                     <filename>bplant1.png</filename>
                     <filename>bplant2.png</filename>
                     <filename>bplant3.png</filename>
+                    <filename>bplant4.png</filename>
                     <filename>cdino1.png</filename>
                     <filename>cdino2.png</filename>
                     <filename>cloud.png</filename>
                     <filename>ddino.png</filename>
+                    <filename>gameover.png</filename>
                     <filename>moon1.png</filename>
                     <filename>moon2.png</filename>
                     <filename>moon3.png</filename>
@@ -401,6 +437,16 @@
                     <filename>moon5.png</filename>
                     <filename>moon6.png</filename>
                     <filename>moon7.png</filename>
+                    <filename>num1.png</filename>
+                    <filename>num10.png</filename>
+                    <filename>num2.png</filename>
+                    <filename>num3.png</filename>
+                    <filename>num4.png</filename>
+                    <filename>num5.png</filename>
+                    <filename>num6.png</filename>
+                    <filename>num7.png</filename>
+                    <filename>num8.png</filename>
+                    <filename>num9.png</filename>
                     <filename>plant1.png</filename>
                     <filename>plant2.png</filename>
                     <filename>plant3.png</filename>
