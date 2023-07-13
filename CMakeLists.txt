@@ -60,6 +60,7 @@ list(APPEND GAME_SOURCE
      Classes/HelloWorldScene.cpp
      Classes/Dino.cpp
      Classes/Environment.cpp
+     Classes/NumberDisplay.cpp
      )
 list(APPEND GAME_HEADER
      Classes/AppDelegate.h
@@ -67,6 +68,7 @@ list(APPEND GAME_HEADER
      Classes/Dino.h
      Classes/Environment.h
      Classes/Noise.h
+     Classes/NumberDisplay.h
      )
 
 if(ANDROID)

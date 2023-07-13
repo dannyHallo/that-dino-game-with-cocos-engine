@@ -3,15 +3,16 @@
 USING_NS_CC;
 
 Dino::Dino(const cocos2d::Vec2 screenSize, cocos2d::Vector<cocos2d::SpriteFrame *> runningFrames,
-           cocos2d::Vector<cocos2d::SpriteFrame *> crouchingFrames, cocos2d::LayerColor *background)
+           cocos2d::Vector<cocos2d::SpriteFrame *> crouchingFrames, cocos2d::SpriteFrame *deadFrame,
+           cocos2d::LayerColor *background)
     : cScreenSize(screenSize), cStartingPos(screenSize.x / 6.f, screenSize.y / 3.f), mRunningFrames(runningFrames),
-      mCrouchingFrames(crouchingFrames), mPosition(cStartingPos), mBackground(background) {
+      mCrouchingFrames(crouchingFrames), mPosition(cStartingPos), mDeadFrame(deadFrame), mBackground(background) {
   // let the dino run forever
   mSprite = cocos2d::Sprite::createWithSpriteFrame(mRunningFrames.front());
   mSprite->setPosition(mPosition);
   mSprite->setAnchorPoint(Vec2(0.5f, 0.f));
 
-  mBackground->addChild(mSprite);
+  mBackground->addChild(mSprite, 3);
   auto animation =
       Animation::createWithSpriteFrames(mRunningFrames, 0.1f); // 0.1f is the delay (in seconds) between frames
   mSprite->runAction(RepeatForever::create(Animate::create(animation)));
@@ -51,6 +52,11 @@ void Dino::handleInput(const Input input) {
       mSprite->runAction(RepeatForever::create(Animate::create(animation)));
       mJumpGravity = cJumpGravityUnpressed;
     }
+    break;
+
+  case Dino::Input::DEAD:
+    mSprite->stopAllActions();
+    mSprite->setSpriteFrame(mDeadFrame);
     break;
   }
 }

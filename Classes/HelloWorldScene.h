@@ -33,15 +33,23 @@
 
 #include "Dino.h"
 #include "Environment.h"
+#include "NumberDisplay.h"
 
 #include <memory>
 
 class HelloWorld : public cocos2d::Layer {
-  std::unique_ptr<Dino> dino;
-  std::unique_ptr<Environment> environment;
+  std::unique_ptr<Dino> mDino;
+  std::unique_ptr<Environment> mEnvironment;
+  std::unique_ptr<NumberDisplay> mScoreDisplay;
+
+  cocos2d::SpriteFrame *gameOverFrame = nullptr;
+  bool mIsDead                        = false;
+  cocos2d::Vec2 mScreenSize;
+  const float cScoringSpeed = 10.f;
+  float mScore;
 
 public:
-  HelloWorld() {}
+  HelloWorld()  = default;
   ~HelloWorld() = default;
 
   // factory method

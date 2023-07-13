@@ -21,6 +21,7 @@ class Dino {
   cocos2d::LayerColor *const mBackground;
   cocos2d::Vector<cocos2d::SpriteFrame *> mRunningFrames; // const?
   cocos2d::Vector<cocos2d::SpriteFrame *> mCrouchingFrames;
+  cocos2d::SpriteFrame *mDeadFrame;
   cocos2d::Sprite *mSprite = nullptr;
 
   cocos2d::Vec2 mPosition;
@@ -30,17 +31,20 @@ class Dino {
   bool mIsCrouching = false;
 
 public:
-  enum Input { JUMP, CROUCH, CANCEL_JUMP, CANCEL_CROUCH, NONE };
+  enum Input { JUMP, CROUCH, CANCEL_JUMP, CANCEL_CROUCH, DEAD, NONE };
 
   Dino(const cocos2d::Vec2 screenSize, cocos2d::Vector<cocos2d::SpriteFrame *> runningFrames,
-       cocos2d::Vector<cocos2d::SpriteFrame *> crouchingFrames, cocos2d::LayerColor *background);
+       cocos2d::Vector<cocos2d::SpriteFrame *> crouchingFrames, cocos2d::SpriteFrame *deadFrame,
+       cocos2d::LayerColor *background);
 
   ~Dino() = default;
 
   inline bool isJumping() const { return mIsJumping; }
   inline bool isCrouching() const { return mIsCrouching; }
 
-  void handleInput(const Input wantTo);
+  void handleInput(const Input input);
+
+  inline cocos2d::Rect getBoundingBox() const { return mSprite->getBoundingBox(); }
 
   // recalc position of dino, draw dino on screen and check for collisions
   void update(const float dt);

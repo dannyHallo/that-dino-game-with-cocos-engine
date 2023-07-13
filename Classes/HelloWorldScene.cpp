@@ -47,17 +47,19 @@ bool HelloWorld::init() {
     return false;
   }
 
+  mScore = 0;
+
   // add listeners
   addKeyboardListeners();
 
   SpriteFrameCache::getInstance()->addSpriteFramesWithFile("dinogame.plist");
 
-  Vec2 origin      = Director::getInstance()->getVisibleOrigin();
-  Vec2 visibleSize = Director::getInstance()->getVisibleSize();
+  Vec2 origin = Director::getInstance()->getVisibleOrigin();
+  mScreenSize = Director::getInstance()->getVisibleSize();
 
   // create background
-  Color4B backgroundColour = Color4B(100, 100, 100, 255);
-  LayerColor *background   = LayerColor::create(backgroundColour, visibleSize.x, visibleSize.y);
+  Color4B backgroundColour = Color4B(125, 125, 125, 255);
+  LayerColor *background   = LayerColor::create(backgroundColour, mScreenSize.x, mScreenSize.y);
   background->setPosition(origin);
   this->addChild(background);
 
@@ -65,19 +67,40 @@ bool HelloWorld::init() {
   auto runningFrames   = getAnimation("rdino%01d.png", 2);
   auto crouchingFrames = getAnimation("cdino%01d.png", 2);
   auto plantFrames     = getAnimation("plant%01d.png", 6);
-  auto bigPlantFrames  = getAnimation("bplant%01d.png", 3);
+  auto bigPlantFrames  = getAnimation("bplant%01d.png", 4);
+  auto birdFrames      = getAnimation("bird%01d.png", 2);
   auto groundSprite    = Sprite::create("ground.png");
+  auto numberFrames    = getAnimation("num%01d.png", 10);
+  auto deadFrame       = SpriteFrameCache::getInstance()->getSpriteFrameByName("ddino.png");
+  gameOverFrame        = SpriteFrameCache::getInstance()->getSpriteFrameByName("gameover.png");
 
-  environment = std::make_unique<Environment>(visibleSize, plantFrames, bigPlantFrames, groundSprite, background);
-  dino        = std::make_unique<Dino>(visibleSize, runningFrames, crouchingFrames, background);
-
+  mEnvironment =
+      std::make_unique<Environment>(mScreenSize, plantFrames, bigPlantFrames, birdFrames, groundSprite, background);
+  mDino         = std::make_unique<Dino>(mScreenSize, runningFrames, crouchingFrames, deadFrame, background);
+  mScoreDisplay = std::make_unique<NumberDisplay>(mScreenSize, numberFrames, background);
   scheduleUpdate(); // this is required to call update() method every frame!
   return true;
 }
 
 void HelloWorld::update(float dt) {
-  dino->update(dt);
-  environment->update(dt);
+  if (mIsDead) return;
+
+  mDino->update(dt);
+  mIsDead = mEnvironment->update(dt, mDino->getBoundingBox());
+
+  mScore += dt * cScoringSpeed;
+  mScoreDisplay->displayNumber(floor(mScore));
+
+  if (mIsDead) {
+    mDino->handleInput(Dino::Input::DEAD);
+
+    // add game over sprite
+    auto gameOverSprite = Sprite::createWithSpriteFrame(gameOverFrame);
+    gameOverSprite->setPosition(mScreenSize.x / 2.f, mScreenSize.y * 2.f / 3.f);
+    this->addChild(gameOverSprite, 3);
+
+    // Director::getInstance()->end();
+  }
 }
 
 void HelloWorld::menuCloseCallback(Ref *pSender) {
@@ -112,25 +135,34 @@ void HelloWorld::onKeyPressed(EventKeyboard::KeyCode keyCode, Event *event) {
     Director::getInstance()->end();
   }
 
-  // press space to jump
-  if (keyCode == EventKeyboard::KeyCode::KEY_SPACE) {
-    dino->handleInput(Dino::Input::JUMP);
-  }
+  if (mIsDead) {
+    // press space to restart
+    if (keyCode == EventKeyboard::KeyCode::KEY_SPACE) {
+      Director::getInstance()->replaceScene(HelloWorld::createScene());
+    }
+  } else {
+    // press space to jump
+    if (keyCode == EventKeyboard::KeyCode::KEY_SPACE) {
+      mDino->handleInput(Dino::Input::JUMP);
+    }
 
-  // press down arrow to crouch
-  if (keyCode == EventKeyboard::KeyCode::KEY_DOWN_ARROW) {
-    dino->handleInput(Dino::Input::CROUCH);
+    // press down arrow to crouch
+    if (keyCode == EventKeyboard::KeyCode::KEY_DOWN_ARROW) {
+      mDino->handleInput(Dino::Input::CROUCH);
+    }
   }
 }
 
 void HelloWorld::onKeyReleased(EventKeyboard::KeyCode keyCode, Event *event) {
+  if (mIsDead) return;
+
   // release space to cancel jump
   if (keyCode == EventKeyboard::KeyCode::KEY_SPACE) {
-    dino->handleInput(Dino::Input::CANCEL_JUMP);
+    mDino->handleInput(Dino::Input::CANCEL_JUMP);
   }
 
   // release down arrow to cancel crouch
   if (keyCode == EventKeyboard::KeyCode::KEY_DOWN_ARROW) {
-    dino->handleInput(Dino::Input::CANCEL_CROUCH);
+    mDino->handleInput(Dino::Input::CANCEL_CROUCH);
   }
 }

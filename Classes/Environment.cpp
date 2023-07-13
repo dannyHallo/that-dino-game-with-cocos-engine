@@ -4,9 +4,10 @@
 USING_NS_CC;
 
 Environment::Environment(const cocos2d::Vec2 screenSize, cocos2d::Vector<cocos2d::SpriteFrame *> plantFrames,
-                         cocos2d::Vector<cocos2d::SpriteFrame *> bigPlantFrames, cocos2d::Sprite *groundSprite,
+                         cocos2d::Vector<cocos2d::SpriteFrame *> bigPlantFrames,
+                         cocos2d::Vector<cocos2d::SpriteFrame *> birdFrames, cocos2d::Sprite *groundSprite,
                          cocos2d::LayerColor *background)
-    : cScreenSize(screenSize), mPlantFrames(plantFrames), mBigPlantFrames(bigPlantFrames),
+    : cScreenSize(screenSize), mPlantFrames(plantFrames), mBigPlantFrames(bigPlantFrames), mBirdFrames(birdFrames),
       mGroundSpriteFrame(groundSprite->getSpriteFrame()), mBackground(background) {
   // Texture2D::TexParams texRepeat{backend::SamplerFilter::NEAREST, backend::SamplerFilter::NEAREST,
   //                                backend::SamplerAddressMode::CLAMP_TO_EDGE, backend::SamplerAddressMode::REPEAT};
@@ -19,15 +20,42 @@ Environment::Environment(const cocos2d::Vec2 screenSize, cocos2d::Vector<cocos2d
     sprite->setAnchorPoint(Vec2(0, 0));
     sprite->setPosition(flooringXPos, cScreenSize.y / 3.f);
     mGrounds.push_back(sprite);
-    mBackground->addChild(sprite);
+    mBackground->addChild(sprite, 1);
   }
 }
 
-void Environment::update(const float dt) {
+bool Environment::update(const float dt, const cocos2d::Rect dinoRect) {
   recalculatePosition(dt);
 
   manageGround();
   manageObstacles(dt);
+
+  checkCollision(dinoRect);
+
+  return isGameOver();
+}
+
+void Environment::checkCollision(const cocos2d::Rect dinoRect) {
+  // make the collision rect smaller (20% from each side)
+  Rect collisionRect{
+      dinoRect.origin.x + dinoRect.size.width * 0.2f,
+      dinoRect.origin.y + dinoRect.size.height * 0.2f,
+      dinoRect.size.width * 0.6f,
+      dinoRect.size.height * 0.6f,
+  };
+  for (auto &obstruct : mPlants) {
+    if (obstruct->getBoundingBox().intersectsRect(collisionRect)) {
+      mIsDead = true;
+      return;
+    }
+  }
+
+  for (auto &obstruct : mBirds) {
+    if (obstruct->getBoundingBox().intersectsRect(collisionRect)) {
+      mIsDead = true;
+      return;
+    }
+  }
 }
 
 void Environment::manageGround() {
@@ -39,16 +67,13 @@ void Environment::manageGround() {
     sprite->setAnchorPoint(Vec2(0, 0));
     sprite->setPosition(cScreenSize.x, cScreenSize.y / 3.f);
 
-    mBackground->addChild(sprite);
+    mBackground->addChild(sprite, 1);
     mGrounds.push_back(sprite);
-
-    log("added ground");
   }
 
   if (mGrounds.front()->getPosition().x < -mGroundSpriteFrame->getOriginalSizeInPixels().width) {
     mGrounds.front()->removeFromParent();
     mGrounds.pop_front();
-    log("removed ground");
   }
 }
 
@@ -60,32 +85,60 @@ void Environment::manageObstacles(const float dt) {
 
   Vec2 noise = Noise::ldsNoise2d(accumN);
 
-  if (noise.x > cGenerationThreshold) {
+  if (noise.x > cPlantGenerationThrehold) {
     // check its distance to the last one
-    if (mObstructs.size() != 0) {
-      const auto &lastObstruct = mObstructs.back();
-      float minimumDistance    = cScreenSize.x * cMinimumObstructGenDistanceRatio;
-      if (lastObstruct->getPosition().x < cScreenSize.x - minimumDistance) {
-        addObstruct(noise.y);
+    if (mPlants.size() != 0) {
+      const auto &lastObstruct = mPlants.back();
+      float minimumDistance    = cScreenSize.x * cPlantMinimumObstructGenDistanceRatio;
+      float distanceToLastBird = cScreenSize.x - lastObstruct->getPosition().x;
+      if (distanceToLastBird > minimumDistance) {
+        addObstruct(noise.y, ObstructType::PLANT);
       }
     }
     // add it directly
     else {
-      addObstruct(noise.y);
+      addObstruct(noise.y, ObstructType::PLANT);
     }
   }
 
-  if (mObstructs.empty()) return;
+  if (noise.y > cBirdGenerationThrehold) {
+    // check its distance to the last one
+    if (mBirds.size() != 0) {
+      const auto &lastObstruct = mBirds.back();
+      float minimumDistance    = cScreenSize.x * cBirdMinimumObstructGenDistanceRatio;
+      float distanceToLastBird = cScreenSize.x - lastObstruct->getPosition().x;
+      if (distanceToLastBird > minimumDistance) {
+        addObstruct(noise.x, ObstructType::BIRD);
+      }
+    }
+    // add it directly
+    else {
+      addObstruct(noise.x, ObstructType::BIRD);
+    }
+  }
 
-  if (mObstructs.front()->getPosition().x < 0) {
-    mObstructs.front()->removeFromParent();
-    mObstructs.pop_front();
+  if (!mPlants.empty()) {
+    if (mPlants.front()->getPosition().x < 0) {
+      mPlants.front()->removeFromParent();
+      mPlants.pop_front();
+    }
+  }
+
+  if (!mBirds.empty()) {
+    if (mBirds.front()->getPosition().x < 0) {
+      mBirds.front()->removeFromParent();
+      mBirds.pop_front();
+    }
   }
 }
 
 void Environment::recalculatePosition(float dt) {
-  for (auto &obstruct : mObstructs) {
+  for (auto &obstruct : mPlants) {
     obstruct->setPosition(obstruct->getPosition() - Vec2(mDinoMoveSpeed, 0) * dt * cTimeMul);
+  }
+
+  for (auto &obstruct : mBirds) {
+    obstruct->setPosition(obstruct->getPosition() - Vec2(mDinoMoveSpeed, 0) * dt * cTimeMul * cBirdSpeedMul);
   }
 
   for (auto &ground : mGrounds) {
@@ -93,26 +146,45 @@ void Environment::recalculatePosition(float dt) {
   }
 }
 
-void Environment::addObstruct(const float randomFac) {
-  int selectionSize = mPlantFrames.size() + mBigPlantFrames.size();
-  int selection     = std::floor(randomFac * selectionSize);
+void Environment::addObstruct(const float randomFac, const ObstructType type) {
+  int selectionSize;
+  if (type == ObstructType::PLANT) {
+    selectionSize = mPlantFrames.size() + mBigPlantFrames.size();
+  } else {
+    selectionSize = mBirdFrames.size();
+  }
+  assert(selectionSize != 0 && "selection size cannot be zero");
 
+  int selection = std::floor(randomFac * selectionSize);
   if (selection == selectionSize) selection = selectionSize - 1;
 
   Sprite *sprite;
 
-  if (selection < mPlantFrames.size())
-    sprite = Sprite::createWithSpriteFrame(mPlantFrames.at(selection));
-  else
-    sprite = Sprite::createWithSpriteFrame(mBigPlantFrames.at(selection - mPlantFrames.size()));
+  if (type == ObstructType::PLANT) {
+    if (selection < mPlantFrames.size())
+      sprite = Sprite::createWithSpriteFrame(mPlantFrames.at(selection));
+    else
+      sprite = Sprite::createWithSpriteFrame(mBigPlantFrames.at(selection - mPlantFrames.size()));
+  } else {
+    sprite = Sprite::createWithSpriteFrame(mBirdFrames.front());
+    auto animation =
+        Animation::createWithSpriteFrames(mBirdFrames, 0.1f); // 0.1f is the delay (in seconds) between frames
+    sprite->runAction(RepeatForever::create(Animate::create(animation)));
+  }
 
   // the anchor is the bottom right corner
   sprite->setAnchorPoint(Vec2(1, 0));
-  sprite->setPosition(cScreenSize.x + sprite->getContentSize().width, cScreenSize.y / 3.f);
+
+  float yOffset = type == ObstructType::PLANT ? 0 : sprite->getContentSize().height * 0.8f;
+  sprite->setPosition(cScreenSize.x + sprite->getContentSize().width, cScreenSize.y / 3.f + yOffset);
 
   //   sprite->getTexture()->setAliasTexParameters();
   //   sprite->setScale(2.f);
 
-  mBackground->addChild(sprite);
-  mObstructs.push_back(sprite);
+  mBackground->addChild(sprite, 2);
+
+  if (type == ObstructType::PLANT)
+    mPlants.push_back(sprite);
+  else
+    mBirds.push_back(sprite);
 }

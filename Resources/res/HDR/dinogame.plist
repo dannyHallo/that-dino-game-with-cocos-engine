@@ -9,21 +9,15 @@
                 <key>aliases</key>
                 <array/>
                 <key>spriteOffset</key>
-                <string>{0,-5}</string>
+                <string>{0,-6}</string>
                 <key>spriteSize</key>
-                <string>{92,72}</string>
+                <string>{92,70}</string>
                 <key>spriteSourceSize</key>
                 <string>{92,82}</string>
                 <key>textureRect</key>
-                <string>{{295,1},{92,72}}</string>
+                <string>{{505,1},{92,70}}</string>
                 <key>textureRotated</key>
-                <true/>
-                <key>triangles</key>
-                <string>4 6 7 4 5 6 2 3 4 1 2 4 0 1 4 0 4 7</string>
-                <key>vertices</key>
-                <string>92 37 92 56 41 82 31 82 26 47 0 43 0 32 22 10</string>
-                <key>verticesUV</key>
-                <string>340 93 321 93 295 42 295 32 330 27 334 1 345 1 367 23</string>
+                <false/>
             </dict>
             <key>bird2.png</key>
             <dict>
@@ -36,15 +30,9 @@
                 <key>spriteSourceSize</key>
                 <string>{92,82}</string>
                 <key>textureRect</key>
-                <string>{{247,193},{92,62}}</string>
+                <string>{{91,126},{92,62}}</string>
                 <key>textureRotated</key>
-                <false/>
-                <key>triangles</key>
-                <string>2 5 6 2 4 5 2 3 4 0 1 2 0 2 6</string>
-                <key>vertices</key>
-                <string>92 39 92 63 43 63 0 42 0 32 31 1 37 1</string>
-                <key>verticesUV</key>
-                <string>339 231 339 255 290 255 247 234 247 224 278 193 284 193</string>
+                <true/>
             </dict>
             <key>bplant1.png</key>
             <dict>
@@ -57,15 +45,9 @@
                 <key>spriteSourceSize</key>
                 <string>{50,100}</string>
                 <key>textureRect</key>
-                <string>{{63,1},{50,100}}</string>
+                <string>{{495,73},{50,100}}</string>
                 <key>textureRotated</key>
-                <false/>
-                <key>triangles</key>
-                <string>0 3 4 0 1 2 0 2 3</string>
-                <key>vertices</key>
-                <string>50 23 50 100 0 100 0 0 39 0</string>
-                <key>verticesUV</key>
-                <string>113 24 113 101 63 101 63 1 102 1</string>
+                <true/>
             </dict>
             <key>bplant2.png</key>
             <dict>
@@ -78,15 +60,9 @@
                 <key>spriteSourceSize</key>
                 <string>{48,100}</string>
                 <key>textureRect</key>
-                <string>{{63,205},{48,100}}</string>
+                <string>{{155,122},{48,100}}</string>
                 <key>textureRotated</key>
-                <true/>
-                <key>triangles</key>
-                <string>0 3 4 2 3 0 2 0 1</string>
-                <key>vertices</key>
-                <string>48 88 36 100 0 100 0 0 48 0</string>
-                <key>verticesUV</key>
-                <string>75 253 63 241 63 205 163 205 163 253</string>
+                <false/>
             </dict>
             <key>bplant3.png</key>
             <dict>
@@ -99,15 +75,24 @@
                 <key>spriteSourceSize</key>
                 <string>{50,100}</string>
                 <key>textureRect</key>
-                <string>{{63,103},{50,100}}</string>
+                <string>{{205,202},{50,100}}</string>
+                <key>textureRotated</key>
+                <true/>
+            </dict>
+            <key>bplant4.png</key>
+            <dict>
+                <key>aliases</key>
+                <array/>
+                <key>spriteOffset</key>
+                <string>{0,0}</string>
+                <key>spriteSize</key>
+                <string>{102,100}</string>
+                <key>spriteSourceSize</key>
+                <string>{102,100}</string>
+                <key>textureRect</key>
+                <string>{{1,24},{102,100}}</string>
                 <key>textureRotated</key>
                 <false/>
-                <key>triangles</key>
-                <string>0 3 4 2 0 1 2 3 0</string>
-                <key>vertices</key>
-                <string>50 100 0 100 0 9 19 0 50 0</string>
-                <key>verticesUV</key>
-                <string>113 203 63 203 63 112 82 103 113 103</string>
             </dict>
             <key>cdino1.png</key>
             <dict>
@@ -120,15 +105,9 @@
                 <key>spriteSourceSize</key>
                 <string>{118,60}</string>
                 <key>textureRect</key>
-                <string>{{1,1},{118,60}}</string>
+                <string>{{385,1},{118,60}}</string>
                 <key>textureRotated</key>
-                <true/>
-                <key>triangles</key>
-                <string>1 5 6 4 5 1 1 2 3 1 3 4 0 1 6</string>
-                <key>vertices</key>
-                <string>118 39 51 60 33 60 20 54 0 21 0 0 118 0</string>
-                <key>verticesUV</key>
-                <string>22 119 1 52 1 34 7 21 40 1 61 1 61 119</string>
+                <false/>
             </dict>
             <key>cdino2.png</key>
             <dict>
@@ -141,15 +120,9 @@
                 <key>spriteSourceSize</key>
                 <string>{118,60}</string>
                 <key>textureRect</key>
-                <string>{{1,121},{118,60}}</string>
+                <string>{{375,63},{118,60}}</string>
                 <key>textureRotated</key>
-                <true/>
-                <key>triangles</key>
-                <string>1 4 5 1 3 4 1 2 3 0 1 5</string>
-                <key>vertices</key>
-                <string>118 41 39 60 21 60 0 21 0 0 118 0</string>
-                <key>verticesUV</key>
-                <string>20 239 1 160 1 142 40 121 61 121 61 239</string>
+                <false/>
             </dict>
             <key>cloud.png</key>
             <dict>
@@ -162,15 +135,9 @@
                 <key>spriteSourceSize</key>
                 <string>{92,27}</string>
                 <key>textureRect</key>
-                <string>{{295,95},{92,27}}</string>
+                <string>{{1,224},{92,27}}</string>
                 <key>textureRotated</key>
-                <true/>
-                <key>triangles</key>
-                <string>0 4 5 1 4 0 1 2 3 1 3 4</string>
-                <key>vertices</key>
-                <string>92 27 0 27 0 24 2 19 41 0 92 0</string>
-                <key>verticesUV</key>
-                <string>295 187 295 95 298 95 303 97 322 136 322 187</string>
+                <false/>
             </dict>
             <key>ddino.png</key>
             <dict>
@@ -183,15 +150,24 @@
                 <key>spriteSourceSize</key>
                 <string>{88,94}</string>
                 <key>textureRect</key>
-                <string>{{205,1},{88,94}}</string>
+                <string>{{195,24},{88,94}}</string>
                 <key>textureRotated</key>
                 <false/>
-                <key>triangles</key>
-                <string>0 6 7 3 4 5 0 5 6 2 3 5 1 2 5 0 1 5</string>
-                <key>vertices</key>
-                <string>88 31 57 94 19 94 0 59 0 29 35 28 39 0 88 0</string>
-                <key>verticesUV</key>
-                <string>293 32 262 95 224 95 205 60 205 30 240 29 244 1 293 1</string>
+            </dict>
+            <key>gameover.png</key>
+            <dict>
+                <key>aliases</key>
+                <array/>
+                <key>spriteOffset</key>
+                <string>{0,0}</string>
+                <key>spriteSize</key>
+                <string>{382,21}</string>
+                <key>spriteSourceSize</key>
+                <string>{382,21}</string>
+                <key>textureRect</key>
+                <string>{{1,1},{382,21}}</string>
+                <key>textureRotated</key>
+                <false/>
             </dict>
             <key>moon1.png</key>
             <dict>
@@ -204,15 +180,9 @@
                 <key>spriteSourceSize</key>
                 <string>{40,80}</string>
                 <key>textureRect</key>
-                <string>{{165,197},{40,80}}</string>
+                <string>{{287,120},{40,80}}</string>
                 <key>textureRotated</key>
-                <true/>
-                <key>triangles</key>
-                <string>0 8 9 2 5 6 3 4 5 2 3 5 2 6 7 1 2 7 1 7 8 0 1 8</string>
-                <key>vertices</key>
-                <string>40 3 23 20 20 58 40 77 40 80 22 80 0 58 0 22 22 0 40 0</string>
-                <key>verticesUV</key>
-                <string>242 237 225 220 187 217 168 237 165 237 165 219 187 197 223 197 245 219 245 237</string>
+                <false/>
             </dict>
             <key>moon2.png</key>
             <dict>
@@ -225,15 +195,9 @@
                 <key>spriteSourceSize</key>
                 <string>{40,80}</string>
                 <key>textureRect</key>
-                <string>{{369,1},{40,80}}</string>
+                <string>{{329,120},{40,80}}</string>
                 <key>textureRotated</key>
                 <false/>
-                <key>triangles</key>
-                <string>0 7 8 0 6 7 2 3 4 1 2 4 1 4 5 1 5 6 0 1 6</string>
-                <key>vertices</key>
-                <string>40 5 26 55 40 75 40 80 22 80 0 58 0 22 22 0 40 0</string>
-                <key>verticesUV</key>
-                <string>409 6 395 56 409 76 409 81 391 81 369 59 369 23 391 1 409 1</string>
             </dict>
             <key>moon3.png</key>
             <dict>
@@ -246,15 +210,9 @@
                 <key>spriteSourceSize</key>
                 <string>{40,80}</string>
                 <key>textureRect</key>
-                <string>{{406,83},{40,80}}</string>
+                <string>{{371,125},{40,80}}</string>
                 <key>textureRotated</key>
-                <false/>
-                <key>triangles</key>
-                <string>3 4 5 2 3 5 0 2 5 0 1 2</string>
-                <key>vertices</key>
-                <string>40 80 22 80 0 58 0 22 22 0 40 0</string>
-                <key>verticesUV</key>
-                <string>446 163 428 163 406 141 406 105 428 83 446 83</string>
+                <true/>
             </dict>
             <key>moon4.png</key>
             <dict>
@@ -267,15 +225,9 @@
                 <key>spriteSourceSize</key>
                 <string>{80,80}</string>
                 <key>textureRect</key>
-                <string>{{324,95},{80,80}}</string>
+                <string>{{205,120},{80,80}}</string>
                 <key>textureRotated</key>
                 <false/>
-                <key>triangles</key>
-                <string>1 4 5 2 3 4 1 2 4 0 1 5</string>
-                <key>vertices</key>
-                <string>80 80 22 80 0 58 0 22 22 0 80 0</string>
-                <key>verticesUV</key>
-                <string>404 175 346 175 324 153 324 117 346 95 404 95</string>
             </dict>
             <key>moon5.png</key>
             <dict>
@@ -288,15 +240,9 @@
                 <key>spriteSourceSize</key>
                 <string>{40,80}</string>
                 <key>textureRect</key>
-                <string>{{411,1},{40,80}}</string>
+                <string>{{453,125},{40,80}}</string>
                 <key>textureRotated</key>
-                <false/>
-                <key>triangles</key>
-                <string>1 2 3 0 1 3</string>
-                <key>vertices</key>
-                <string>40 80 0 80 0 0 40 0</string>
-                <key>verticesUV</key>
-                <string>451 81 411 81 411 1 451 1</string>
+                <true/>
             </dict>
             <key>moon6.png</key>
             <dict>
@@ -309,15 +255,9 @@
                 <key>spriteSourceSize</key>
                 <string>{40,80}</string>
                 <key>textureRect</key>
-                <string>{{413,165},{40,80}}</string>
+                <string>{{371,167},{40,80}}</string>
                 <key>textureRotated</key>
-                <false/>
-                <key>triangles</key>
-                <string>3 5 6 3 4 5 0 3 6 0 2 3 0 1 2</string>
-                <key>vertices</key>
-                <string>40 80 0 80 0 75 14 22 0 6 0 0 40 0</string>
-                <key>verticesUV</key>
-                <string>453 245 413 245 413 240 427 187 413 171 413 165 453 165</string>
+                <true/>
             </dict>
             <key>moon7.png</key>
             <dict>
@@ -330,15 +270,159 @@
                 <key>spriteSourceSize</key>
                 <string>{40,80}</string>
                 <key>textureRect</key>
-                <string>{{448,83},{40,80}}</string>
+                <string>{{453,167},{40,80}}</string>
+                <key>textureRotated</key>
+                <true/>
+            </dict>
+            <key>num1.png</key>
+            <dict>
+                <key>aliases</key>
+                <array/>
+                <key>spriteOffset</key>
+                <string>{0,0}</string>
+                <key>spriteSize</key>
+                <string>{18,21}</string>
+                <key>spriteSourceSize</key>
+                <string>{18,21}</string>
+                <key>textureRect</key>
+                <string>{{599,1},{18,21}}</string>
                 <key>textureRotated</key>
                 <false/>
-                <key>triangles</key>
-                <string>5 6 7 4 5 7 0 4 7 1 2 3 0 1 3 0 3 4</string>
-                <key>vertices</key>
-                <string>40 80 0 80 0 77 17 60 20 22 0 3 0 0 40 0</string>
-                <key>verticesUV</key>
-                <string>488 163 448 163 448 160 465 143 468 105 448 86 448 83 488 83</string>
+            </dict>
+            <key>num10.png</key>
+            <dict>
+                <key>aliases</key>
+                <array/>
+                <key>spriteOffset</key>
+                <string>{0,0}</string>
+                <key>spriteSize</key>
+                <string>{18,21}</string>
+                <key>spriteSourceSize</key>
+                <string>{18,21}</string>
+                <key>textureRect</key>
+                <string>{{597,96},{18,21}}</string>
+                <key>textureRotated</key>
+                <false/>
+            </dict>
+            <key>num2.png</key>
+            <dict>
+                <key>aliases</key>
+                <array/>
+                <key>spriteOffset</key>
+                <string>{0,0}</string>
+                <key>spriteSize</key>
+                <string>{16,21}</string>
+                <key>spriteSourceSize</key>
+                <string>{16,21}</string>
+                <key>textureRect</key>
+                <string>{{597,73},{16,21}}</string>
+                <key>textureRotated</key>
+                <false/>
+            </dict>
+            <key>num3.png</key>
+            <dict>
+                <key>aliases</key>
+                <array/>
+                <key>spriteOffset</key>
+                <string>{0,0}</string>
+                <key>spriteSize</key>
+                <string>{18,21}</string>
+                <key>spriteSourceSize</key>
+                <string>{18,21}</string>
+                <key>textureRect</key>
+                <string>{{599,24},{18,21}}</string>
+                <key>textureRotated</key>
+                <false/>
+            </dict>
+            <key>num4.png</key>
+            <dict>
+                <key>aliases</key>
+                <array/>
+                <key>spriteOffset</key>
+                <string>{0,0}</string>
+                <key>spriteSize</key>
+                <string>{18,21}</string>
+                <key>spriteSourceSize</key>
+                <string>{18,21}</string>
+                <key>textureRect</key>
+                <string>{{599,47},{18,21}}</string>
+                <key>textureRotated</key>
+                <false/>
+            </dict>
+            <key>num5.png</key>
+            <dict>
+                <key>aliases</key>
+                <array/>
+                <key>spriteOffset</key>
+                <string>{0,0}</string>
+                <key>spriteSize</key>
+                <string>{18,21}</string>
+                <key>spriteSourceSize</key>
+                <string>{18,21}</string>
+                <key>textureRect</key>
+                <string>{{95,220},{18,21}}</string>
+                <key>textureRotated</key>
+                <false/>
+            </dict>
+            <key>num6.png</key>
+            <dict>
+                <key>aliases</key>
+                <array/>
+                <key>spriteOffset</key>
+                <string>{0,0}</string>
+                <key>spriteSize</key>
+                <string>{18,21}</string>
+                <key>spriteSourceSize</key>
+                <string>{18,21}</string>
+                <key>textureRect</key>
+                <string>{{115,220},{18,21}}</string>
+                <key>textureRotated</key>
+                <false/>
+            </dict>
+            <key>num7.png</key>
+            <dict>
+                <key>aliases</key>
+                <array/>
+                <key>spriteOffset</key>
+                <string>{0,0}</string>
+                <key>spriteSize</key>
+                <string>{18,21}</string>
+                <key>spriteSourceSize</key>
+                <string>{18,21}</string>
+                <key>textureRect</key>
+                <string>{{135,220},{18,21}}</string>
+                <key>textureRotated</key>
+                <false/>
+            </dict>
+            <key>num8.png</key>
+            <dict>
+                <key>aliases</key>
+                <array/>
+                <key>spriteOffset</key>
+                <string>{0,0}</string>
+                <key>spriteSize</key>
+                <string>{18,21}</string>
+                <key>spriteSourceSize</key>
+                <string>{18,21}</string>
+                <key>textureRect</key>
+                <string>{{155,224},{18,21}}</string>
+                <key>textureRotated</key>
+                <true/>
+            </dict>
+            <key>num9.png</key>
+            <dict>
+                <key>aliases</key>
+                <array/>
+                <key>spriteOffset</key>
+                <string>{0,0}</string>
+                <key>spriteSize</key>
+                <string>{18,21}</string>
+                <key>spriteSourceSize</key>
+                <string>{18,21}</string>
+                <key>textureRect</key>
+                <string>{{178,224},{18,21}}</string>
+                <key>textureRotated</key>
+                <true/>
             </dict>
             <key>plant1.png</key>
             <dict>
@@ -351,15 +435,9 @@
                 <key>spriteSourceSize</key>
                 <string>{34,70}</string>
                 <key>textureRect</key>
-                <string>{{341,177},{34,70}}</string>
+                <string>{{535,125},{34,70}}</string>
                 <key>textureRotated</key>
                 <false/>
-                <key>triangles</key>
-                <string>1 2 3 0 1 3</string>
-                <key>vertices</key>
-                <string>34 70 0 70 0 0 34 0</string>
-                <key>verticesUV</key>
-                <string>375 247 341 247 341 177 375 177</string>
             </dict>
             <key>plant2.png</key>
             <dict>
@@ -372,15 +450,9 @@
                 <key>spriteSourceSize</key>
                 <string>{34,70}</string>
                 <key>textureRect</key>
-                <string>{{377,177},{34,70}}</string>
+                <string>{{571,125},{34,70}}</string>
                 <key>textureRotated</key>
                 <false/>
-                <key>triangles</key>
-                <string>1 2 3 0 1 3</string>
-                <key>vertices</key>
-                <string>34 70 0 70 0 0 34 0</string>
-                <key>verticesUV</key>
-                <string>411 247 377 247 377 177 411 177</string>
             </dict>
             <key>plant3.png</key>
             <dict>
@@ -393,15 +465,9 @@
                 <key>spriteSourceSize</key>
                 <string>{34,70}</string>
                 <key>textureRect</key>
-                <string>{{453,1},{34,70}}</string>
+                <string>{{535,197},{34,70}}</string>
                 <key>textureRotated</key>
-                <false/>
-                <key>triangles</key>
-                <string>1 2 3 0 1 3</string>
-                <key>vertices</key>
-                <string>34 70 0 70 0 0 34 0</string>
-                <key>verticesUV</key>
-                <string>487 71 453 71 453 1 487 1</string>
+                <true/>
             </dict>
             <key>plant4.png</key>
             <dict>
@@ -414,15 +480,9 @@
                 <key>spriteSourceSize</key>
                 <string>{34,70}</string>
                 <key>textureRect</key>
-                <string>{{489,1},{34,70}}</string>
+                <string>{{307,209},{34,70}}</string>
                 <key>textureRotated</key>
-                <false/>
-                <key>triangles</key>
-                <string>1 2 3 0 1 3</string>
-                <key>vertices</key>
-                <string>34 70 0 70 0 0 34 0</string>
-                <key>verticesUV</key>
-                <string>523 71 489 71 489 1 523 1</string>
+                <true/>
             </dict>
             <key>plant5.png</key>
             <dict>
@@ -435,15 +495,9 @@
                 <key>spriteSourceSize</key>
                 <string>{34,70}</string>
                 <key>textureRect</key>
-                <string>{{455,165},{34,70}}</string>
+                <string>{{379,209},{34,70}}</string>
                 <key>textureRotated</key>
-                <false/>
-                <key>triangles</key>
-                <string>1 2 3 0 1 3</string>
-                <key>vertices</key>
-                <string>34 70 0 70 0 0 34 0</string>
-                <key>verticesUV</key>
-                <string>489 235 455 235 455 165 489 165</string>
+                <true/>
             </dict>
             <key>plant6.png</key>
             <dict>
@@ -456,15 +510,9 @@
                 <key>spriteSourceSize</key>
                 <string>{34,70}</string>
                 <key>textureRect</key>
-                <string>{{490,73},{34,70}}</string>
+                <string>{{451,209},{34,70}}</string>
                 <key>textureRotated</key>
-                <false/>
-                <key>triangles</key>
-                <string>1 2 3 0 1 3</string>
-                <key>vertices</key>
-                <string>34 70 0 70 0 0 34 0</string>
-                <key>verticesUV</key>
-                <string>524 143 490 143 490 73 524 73</string>
+                <true/>
             </dict>
             <key>rdino1.png</key>
             <dict>
@@ -477,15 +525,9 @@
                 <key>spriteSourceSize</key>
                 <string>{88,96}</string>
                 <key>textureRect</key>
-                <string>{{115,1},{88,96}}</string>
+                <string>{{1,126},{88,96}}</string>
                 <key>textureRotated</key>
                 <false/>
-                <key>triangles</key>
-                <string>5 6 7 4 2 3 4 5 2 2 5 7 1 2 7 1 7 8 0 1 8</string>
-                <key>vertices</key>
-                <string>88 1 88 33 63 81 48 96 19 96 0 61 0 31 35 30 39 0</string>
-                <key>verticesUV</key>
-                <string>203 2 203 34 178 82 163 97 134 97 115 62 115 32 150 31 154 1</string>
             </dict>
             <key>rdino2.png</key>
             <dict>
@@ -498,15 +540,9 @@
                 <key>spriteSourceSize</key>
                 <string>{88,96}</string>
                 <key>textureRect</key>
-                <string>{{115,99},{88,96}}</string>
+                <string>{{105,24},{88,96}}</string>
                 <key>textureRotated</key>
                 <false/>
-                <key>triangles</key>
-                <string>4 5 6 3 4 6 1 2 6 2 3 6 1 6 7 0 1 7</string>
-                <key>vertices</key>
-                <string>88 1 88 33 57 96 30 96 0 66 0 31 35 30 39 0</string>
-                <key>verticesUV</key>
-                <string>203 100 203 132 172 195 145 195 115 165 115 130 150 129 154 99</string>
             </dict>
             <key>sdino.png</key>
             <dict>
@@ -519,15 +555,9 @@
                 <key>spriteSourceSize</key>
                 <string>{88,94}</string>
                 <key>textureRect</key>
-                <string>{{205,97},{88,94}}</string>
+                <string>{{285,24},{88,94}}</string>
                 <key>textureRotated</key>
                 <false/>
-                <key>triangles</key>
-                <string>0 6 7 3 4 5 0 5 6 2 3 5 1 2 5 0 1 5</string>
-                <key>vertices</key>
-                <string>88 31 57 94 19 94 0 59 0 29 35 28 39 0 88 0</string>
-                <key>verticesUV</key>
-                <string>293 128 262 191 224 191 205 156 205 126 240 125 244 97 293 97</string>
             </dict>
         </dict>
         <key>metadata</key>
@@ -541,9 +571,9 @@
             <key>realTextureFileName</key>
             <string>dinogame.png</string>
             <key>size</key>
-            <string>{525,256}</string>
+            <string>{618,253}</string>
             <key>smartupdate</key>
-            <string>$TexturePacker:SmartUpdate:307cf49c2c9dfd8e2e594bef0abf86dd:444541fb9d1585afd59cd82d2bd954f6:7b79ed07ad74493820d05eaa4ece2d6b$</string>
+            <string>$TexturePacker:SmartUpdate:4046c7de019aa1446980fe1d1a056ad8:e73992b74b2548c6e20dc1ff47248a49:9dd8231a77e04a6e374589a86218ce23$</string>
             <key>textureFileName</key>
             <string>dinogame.png</string>
         </dict>
